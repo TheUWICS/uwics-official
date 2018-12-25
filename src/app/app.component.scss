@@ -4,6 +4,10 @@
   margin: 8px 0;
 }
 
+.hide-on-mobile {
+  display: inherit;
+}
+
 #navbar .mdl-navigation__link {
   padding: 15px;
 }
@@ -20,4 +24,10 @@
   background: url('../assets/images/logo.webp') center no-repeat;
   background-size: 65%;
   height: 150px;
+}
+
+@media screen and (max-width: 1024px) {
+  .hide-on-mobile {
+    display: none;
+  }
 }

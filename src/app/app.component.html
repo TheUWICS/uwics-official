@@ -7,7 +7,7 @@
       <span class="mdl-layout-title">The UWICS</span>
       <div class="mdl-layout-spacer"></div>
 
-      <nav id = "navbar" class="mdl-navigation mdl-layout--large-screen-only">
+      <nav id = "navbar" class="mdl-navigation hide-on-mobile">
         <a class="mdl-navigation__link mdl-js-ripple-effect">
           <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Home</button>
         </a>
@@ -26,8 +26,20 @@
         <a class="mdl-navigation__link">
           <button class="mdl-button mdl-js-button mdl-js-ripple-effect">About</button>
         </a>
-
       </nav>
+
+      <button id="demo-menu-lower-right"
+              class="mdl-button mdl-js-button mdl-button--icon hide-on-mobile">
+        <i class="material-icons">more_vert</i>
+      </button>
+
+      <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+          for="demo-menu-lower-right">
+        <li class="mdl-menu__item">Toggle Theme</li>
+        <li class="mdl-menu__item">Report a Bug</li>
+        <li class="mdl-menu__item">Have suggestions for the website?</li>
+      </ul>
+
     </div>
   </header>
 
@@ -41,6 +53,10 @@
       <a class="mdl-navigation__link">Projects</a>
       <a class="mdl-navigation__link">Directions</a>
       <a class="mdl-navigation__link">About</a>
+      <a class="mdl-navigation__link">Toggle theme</a>
+      <div class="android-drawer-separator"></div>
+      <a class="mdl-navigation__link">Report a Bug</a>
+      <a class="mdl-navigation__link">Have Suggestions for the website?</a>
       <div class="android-drawer-separator"></div>
     </nav>
   </div>

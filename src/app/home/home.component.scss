@@ -1,6 +1,6 @@
 .android-wear-section {
   position: relative;
-  background: url('../../assets/images/wear.webp') center top no-repeat;
+  background: url('../../assets/images/header.webp') center top no-repeat;
   background-size: cover;
   height: 800px;
 }
@@ -53,6 +53,20 @@
   top: 6px;
 }
 
+.android-customized-section {
+  text-align: center;
+}
+
+.android-customized-section-text {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px 16px 0 16px;
+}
+
+.android-customized-section-text p {
+  padding-top: 16px;
+}
+
 .android-card-container .mdl-card__media {
   overflow: hidden;
 }
@@ -66,11 +80,11 @@
 }
 
 .card-text p {
-  margin: 0 10px 5px 20px;
+  margin: 0 10px 30px 20px;
 }
 
 .card-text a {
-  margin: 20px 10px 5px 2px;
+  margin: 20px 10px 0 2px;
 }
 
 .mdl-mega-footer {

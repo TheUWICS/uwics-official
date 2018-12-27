@@ -40,6 +40,25 @@ mat-sidenav {
   width: 300px;
 }
 
+
+footer {
+  //color: mintcream !important;
+  font-size: 14px;
+}
+
+.android-footer {
+  position: relative;
+}
+
+.android-footer a {
+  margin-right: 2em;
+}
+
+.android-footer a:hover {
+  color: #8bc34a;
+}
+
+
 @media screen and (max-width: 425px) {
   mat-sidenav {
     width: 55vw;

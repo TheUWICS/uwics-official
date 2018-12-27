@@ -14,99 +14,26 @@
   color: white;
 }
 
-#heading {
-  margin-bottom: 0;
-}
-
-#subheading {
-  margin-top: 0;
-  font-size: 20px;
-}
-
-//
-//.android-link {
-//  text-decoration: none;
-//  color: #8bc34a !important;
-//}
-//
-//.android-link:hover {
-//  color: #7cb342 !important;
-//}
-//
-//.android-link .material-icons {
-//  position: relative;
-//  top: -1px;
-//  vertical-align: middle;
-//}
-//
-//.android-more-section {
-//  padding: 40px 0;
-//  max-width: 100vw;
-//}
-//
-//.android-alt-link {
-//  text-decoration: none;
-//  color: #64ffda !important;
-//  font-size: 16px;
-//}
-//
-//.android-alt-link:hover {
-//  color: #00bfa5 !important;
-//}
-//
-//.android-alt-link .material-icons {
-//  position: relative;
-//  top: 6px;
-//}
-//
-.next--meeting {
+.meetings, .morals {
+  margin: 0 0 15px 0;
   text-align: center;
 }
 
-.next--meeting--text {
+.meetings--text{
   margin-left: auto;
   margin-right: auto;
   padding: 0 16px 0 16px;
 }
 
-.android-customized-section-text p {
-  padding-top: 16px;
+
+.mat-expansion-panel p{
+  width: 75%;
+  margin: 10px auto;
 }
 
-
-//
-//.android-card-container .mdl-card__media {
-//  overflow: hidden;
-//}
-//
-//.android-card-container .mdl-card__media img {
-//  width: 100%;
-//}
-//
-//.card-text h4 {
-//  margin: 20px
-//}
-//
-//.card-text p {
-//  margin: 0 10px 30px 20px;
-//}
-//
-//.card-text a {
-//  margin: 20px 10px 0 2px;
-//}
-//
-//.mdl-mega-footer {
-//  color: white !important;
-//}
-//
-//.android-footer {
-//  position: relative;
-//}
-//
-//.android-footer a {
-//  margin-right: 2em;
-//}
-//
-//.android-footer a:hover {
-//  color: #8bc34a;
-//}
+@media screen and (min-width: 768px) {
+  .mat-expansion-panel {
+    width: 80vw;
+    margin: 0 auto;
+  }
+}

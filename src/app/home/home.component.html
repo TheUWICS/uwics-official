@@ -1,7 +1,9 @@
 <div class="welcome">
   <div class="welcome--text">
-    <h1 id = "heading">Welcome to the UWI Computing Society!</h1>
-    <p id = "subheading"> We seek active interest in emerging technology, etc... (More description to come) </p>
+
+    <h1>Welcome to the UWI Computing Society!</h1>
+    <p> We seek active interest in emerging technology, etc... (More description to come) </p>
+
     <p>
       <button mat-raised-button color = "primary">
         Want to see some of our members' projects?
@@ -11,32 +13,103 @@
         </svg>
       </button>
     </p>
+
   </div>
 </div>
 
-<div class="next--meeting">
-  <div class="next--meeting--text">
-    <h1 class="mdl-typography--display-1">Club Meetings</h1>
+<div class="meetings">
+
+  <div class="meetings--text">
+    <h1>Club Meetings</h1>
     <p> Meeting location: <strong>FST 2nd Floor, Computer Science Lab 2</strong> </p>
     <p> Meeting time: <strong>2:00pm - 4:00pm</strong> </p>
-
-    <mat-divider></mat-divider>
-
-    <app-event></app-event>
-    <app-event></app-event>
-    <app-event></app-event>
-
-    <br>
-    <button style = "margin-bottom: 20px;" mat-raised-button color = "primary">
-      Want to see all our past sessions?
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
-        <path d="M0 0h24v24H0z" fill="none"></path>
-      </svg>
-
-    </button>
-    <mat-divider></mat-divider>
   </div>
+
+  <div class = "meetings--content">
+    <app-event></app-event>
+    <app-event></app-event>
+    <app-event></app-event>
+  </div>
+
+  <br>
+  <button mat-raised-button color = "primary">
+    Want to see all our past sessions?
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+    </svg>
+  </button>
+
 </div>
 
-<p>More text</p>
+<mat-divider></mat-divider>
+
+<div class="morals">
+  <div class="morals--header">
+    <h1>What we stand for</h1>
+    <p> Sometimes, we focus on more than technology</p>
+  </div>
+
+  <div class="morals--content">
+
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          Title: subtitle
+        </mat-expansion-panel-header>
+
+        <p>
+          Lorem ipsum dolor sit amet, tempor expetendis eum no, vim te errem graecis probatus. Ut duo audire adipiscing
+          vituperatoribus. Mea at eius postea fabellas, ei prompta mandamus quo. Ad cum quem tollit, justo oblique
+          cum no. Ex nam convenire constituam, fuisset phaedrum ei sed.
+        </p>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          Title: subtitle
+        </mat-expansion-panel-header>
+
+        <p>
+          Lorem ipsum dolor sit amet, tempor expetendis eum no, vim te errem graecis probatus. Ut duo audire adipiscing
+          vituperatoribus. Mea at eius postea fabellas, ei prompta mandamus quo. Ad cum quem tollit, justo oblique
+          cum no. Ex nam convenire constituam, fuisset phaedrum ei sed.
+        </p>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          Title: subtitle
+        </mat-expansion-panel-header>
+
+        <p>
+          Lorem ipsum dolor sit amet, tempor expetendis eum no, vim te errem graecis probatus. Ut duo audire adipiscing
+          vituperatoribus. Mea at eius postea fabellas, ei prompta mandamus quo. Ad cum quem tollit, justo oblique
+          cum no. Ex nam convenire constituam, fuisset phaedrum ei sed.
+        </p>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          Title: subtitle
+        </mat-expansion-panel-header>
+
+        <p>
+          Lorem ipsum dolor sit amet, tempor expetendis eum no, vim te errem graecis probatus. Ut duo audire adipiscing
+          vituperatoribus. Mea at eius postea fabellas, ei prompta mandamus quo. Ad cum quem tollit, justo oblique
+          cum no. Ex nam convenire constituam, fuisset phaedrum ei sed.
+        </p>
+      </mat-expansion-panel>
+    </mat-accordion>
+
+  </div>
+
+  <br>
+  <button style = "margin-top: 15px;" mat-raised-button color = "primary">
+    More about us
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+    </svg>
+  </button>
+</div>

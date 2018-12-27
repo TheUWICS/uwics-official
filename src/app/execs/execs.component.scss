@@ -1,5 +1,4 @@
-.header {
-  margin: 0 auto;
+.wrapper {
   text-align: center;
 }
 
@@ -8,19 +7,22 @@
   margin: 10px auto;
 }
 
-#pres, .row {
-  display: flex;
-  justify-content: center;
+.all-execs {
+  margin: 20px 0 20px 0;
 }
 
-@media screen and (max-width: 900px) {
-  .row {
-    display: inherit;
-  }
+.mat-card-content img {
+  height: 400px;
+}
 
-  .row app-exec-card {
-    display: flex;
-    justify-content: center;
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .mat-card-content img {
+    width: 35vw;
   }
 }
 

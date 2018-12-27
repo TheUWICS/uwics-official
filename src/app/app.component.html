@@ -1,73 +1,58 @@
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+<div class="example-container">
+  <mat-toolbar color="primary" class="example-toolbar">
+    <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+    <h1 class="example-app-name">The UWICS</h1>
+    <span class="example-fill-remaining-space"></span>
 
-  <header class="mdl-layout__header">
-
-    <div class="mdl-layout__header-row">
-
-      <span class="mdl-layout-title">The UWICS</span>
-      <div class="mdl-layout-spacer"></div>
-
-      <nav id = "navbar" class="mdl-navigation hide-on-mobile">
-        <a class="mdl-navigation__link mdl-js-ripple-effect">
-          <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Home</button>
-        </a>
-        <a class="mdl-navigation__link">
-          <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Executives</button>
-        </a>
-        <a class="mdl-navigation__link">
-          <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Meetings and Events</button>
-        </a>
-        <a class="mdl-navigation__link">
-          <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Projects</button>
-        </a>
-        <a class="mdl-navigation__link">
-          <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Directions</button>
-        </a>
-        <a class="mdl-navigation__link">
-          <button class="mdl-button mdl-js-button mdl-js-ripple-effect">About</button>
-        </a>
-      </nav>
-
-      <button id="demo-menu-lower-right"
-              class="mdl-button mdl-js-button mdl-button--icon hide-on-mobile">
-        <i class="material-icons">more_vert</i>
-      </button>
-
-      <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
-          for="demo-menu-lower-right">
-        <li class="mdl-menu__item">Toggle Theme</li>
-        <li class="mdl-menu__item">Report a Bug</li>
-        <li class="mdl-menu__item">Have suggestions for the website?</li>
-      </ul>
-
+    <div *ngIf = "!mobileQuery.matches">
+      <button mat-flat-button color="primary" routerLink= "" (click) = "snav.close()">Home</button>
+      <button mat-flat-button color="primary" routerLink= "/execs" (click) = "snav.close()" >Executives</button>
+      <button mat-flat-button color="primary" routerLink= "" (click) = "snav.close()" >Events</button>
+      <button mat-flat-button color="primary" routerLink= "" (click) = "snav.close()">Projects</button>
+      <button mat-flat-button color="primary" routerLink= "" (click) = "snav.close()">Directions</button>
     </div>
-  </header>
 
-  <div class="android-drawer mdl-layout__drawer">
-    <div class="mdl-layout-title"></div>
-    <nav class="mdl-navigation">
-      <div class="android-drawer-separator"></div>
-      <a class="mdl-navigation__link">Home</a>
-      <a class="mdl-navigation__link">Executives</a>
-      <a class="mdl-navigation__link">Meetings and Events</a>
-      <a class="mdl-navigation__link">Projects</a>
-      <a class="mdl-navigation__link">Directions</a>
-      <a class="mdl-navigation__link">About</a>
-      <a class="mdl-navigation__link">Toggle theme</a>
-      <div class="android-drawer-separator"></div>
-      <a class="mdl-navigation__link">Report a Bug</a>
-      <a class="mdl-navigation__link">Have Suggestions for the website?</a>
-      <div class="android-drawer-separator"></div>
-    </nav>
-  </div>
+    <button mat-icon-button [matMenuTriggerFor]="menu" (click) = "snav.close()">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item [matMenuTriggerFor]="themes">Toggle Theme</button>
+      <button mat-menu-item>Report a bug</button>
+      <button mat-menu-item>Have suggestions for us?</button>
+      <button mat-menu-item>About</button>
+    </mat-menu>
 
-  <main class="mdl-layout__content">
-    <div class="page-content">
+    <mat-menu #themes="matMenu">
+      <button mat-menu-item>Theme 1</button>
+      <button mat-menu-item>Theme 2</button>
+      <button mat-menu-item>Theme 3</button>
+      <button mat-menu-item>Theme 4</button>
+      <button mat-menu-item>Theme 5</button>
+    </mat-menu>
+
+  </mat-toolbar>
+
+  <mat-sidenav-container class="example-sidenav-container">
+    <mat-sidenav #snav [mode]="over" (click) = "snav.close()"
+                 [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+      <div id = "nav-logo"></div>
+
+      <mat-nav-list>
+        <a mat-list-item routerLink= "" >Home</a>
+        <a mat-list-item routerLink= "/execs" >Executives</a>
+        <a mat-list-item routerLink= "." >Meetings and Events</a>
+        <a mat-list-item routerLink= "." >Projects</a>
+        <a mat-list-item routerLink= "." >Directions</a>
+        <mat-divider></mat-divider>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
 
       <router-outlet></router-outlet>
 
-    </div>
-  </main>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
 </div>
 
 

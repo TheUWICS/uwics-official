@@ -1,0 +1,26 @@
+.header {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header p {
+  width: 75vw;
+  margin: 10px auto;
+}
+
+#pres, .row {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+  .row {
+    display: inherit;
+  }
+
+  .row app-exec-card {
+    display: flex;
+    justify-content: center;
+  }
+}
+

@@ -1,33 +1,47 @@
-.android-drawer-separator {
-  height: 1px;
-  background-color: #dcdcdc;
-  margin: 8px 0;
+#nav-logo {
+  width: 175px;
+  height: 175px;
+  background: url('../assets/images/logo.webp') center top no-repeat;
+  background-size: cover;
+  margin: 0 auto;
 }
 
-.hide-on-mobile {
-  display: inherit;
+.example-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
-#navbar .mdl-navigation__link {
-  padding: 15px;
+.example-is-mobile .example-toolbar {
+  position: fixed;
+  z-index: 2;
 }
 
-#navbar .mdl-navigation__link button {
-  padding-left: 5px;
-  padding-right: 5px;
-  color: white;
+h1.example-app-name {
+  margin-left: 8px;
 }
 
-.android-drawer .mdl-layout-title {
-  padding-left: 10px;
-  padding-right: 10px;
-  background: url('../assets/images/logo.webp') center no-repeat;
-  background-size: 65%;
-  height: 150px;
+.example-sidenav-container {
+  flex: 1;
 }
 
-@media screen and (max-width: 1024px) {
-  .hide-on-mobile {
-    display: none;
+.example-is-mobile .example-sidenav-container {
+  flex: 1 0 auto;
+}
+
+.example-fill-remaining-space {
+  flex: 1 1 auto;
+}
+mat-sidenav {
+  width: 300px;
+}
+
+@media screen and (max-width: 425px) {
+  mat-sidenav {
+    width: 55vw;
   }
 }

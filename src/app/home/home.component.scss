@@ -1,104 +1,112 @@
-.android-wear-section {
+.welcome {
   position: relative;
   background: url('../../assets/images/header.webp') center top no-repeat;
   background-size: cover;
   height: 800px;
 }
 
-.android-wear-band-text {
+.welcome--text {
+  padding: 0 10px 0 10px;
   position: absolute;
   bottom: 0; left: 0; right: 0;
-  padding: 24px;
   background-color: #424242;
   text-align: center;
   color: white;
 }
 
-.android-wear-band-text p {
-  padding-top: 8px;
+#heading {
+  margin-bottom: 0;
 }
 
-.android-link {
-  text-decoration: none;
-  color: #8bc34a !important;
+#subheading {
+  margin-top: 0;
+  font-size: 20px;
 }
 
-.android-link:hover {
-  color: #7cb342 !important;
-}
-
-.android-link .material-icons {
-  position: relative;
-  top: -1px;
-  vertical-align: middle;
-}
-
-.android-more-section {
-  padding: 40px 0;
-  max-width: 100vw;
-}
-
-.android-alt-link {
-  text-decoration: none;
-  color: #64ffda !important;
-  font-size: 16px;
-}
-
-.android-alt-link:hover {
-  color: #00bfa5 !important;
-}
-
-.android-alt-link .material-icons {
-  position: relative;
-  top: 6px;
-}
-
-.android-customized-section {
+//
+//.android-link {
+//  text-decoration: none;
+//  color: #8bc34a !important;
+//}
+//
+//.android-link:hover {
+//  color: #7cb342 !important;
+//}
+//
+//.android-link .material-icons {
+//  position: relative;
+//  top: -1px;
+//  vertical-align: middle;
+//}
+//
+//.android-more-section {
+//  padding: 40px 0;
+//  max-width: 100vw;
+//}
+//
+//.android-alt-link {
+//  text-decoration: none;
+//  color: #64ffda !important;
+//  font-size: 16px;
+//}
+//
+//.android-alt-link:hover {
+//  color: #00bfa5 !important;
+//}
+//
+//.android-alt-link .material-icons {
+//  position: relative;
+//  top: 6px;
+//}
+//
+.next--meeting {
   text-align: center;
 }
 
-.android-customized-section-text {
+.next--meeting--text {
   margin-left: auto;
   margin-right: auto;
-  padding: 80px 16px 0 16px;
+  padding: 0 16px 0 16px;
 }
 
 .android-customized-section-text p {
   padding-top: 16px;
 }
 
-.android-card-container .mdl-card__media {
-  overflow: hidden;
-}
 
-.android-card-container .mdl-card__media img {
-  width: 100%;
-}
-
-.card-text h4 {
-  margin: 20px
-}
-
-.card-text p {
-  margin: 0 10px 30px 20px;
-}
-
-.card-text a {
-  margin: 20px 10px 0 2px;
-}
-
-.mdl-mega-footer {
-  color: white !important;
-}
-
-.android-footer {
-  position: relative;
-}
-
-.android-footer a {
-  margin-right: 2em;
-}
-
-.android-footer a:hover {
-  color: #8bc34a;
-}
+//
+//.android-card-container .mdl-card__media {
+//  overflow: hidden;
+//}
+//
+//.android-card-container .mdl-card__media img {
+//  width: 100%;
+//}
+//
+//.card-text h4 {
+//  margin: 20px
+//}
+//
+//.card-text p {
+//  margin: 0 10px 30px 20px;
+//}
+//
+//.card-text a {
+//  margin: 20px 10px 0 2px;
+//}
+//
+//.mdl-mega-footer {
+//  color: white !important;
+//}
+//
+//.android-footer {
+//  position: relative;
+//}
+//
+//.android-footer a {
+//  margin-right: 2em;
+//}
+//
+//.android-footer a:hover {
+//  color: #8bc34a;
+//}

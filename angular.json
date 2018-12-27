@@ -28,11 +28,9 @@
               "src/manifest.json"
             ],
             "styles": [
-              "src/styles.scss",
-              "./node_modules/material-design-lite/material.min.css"
+              "src/styles.scss"
             ],
             "scripts": [
-              "./node_modules/material-design-lite/material.min.js"
             ]
           },
           "configurations": {

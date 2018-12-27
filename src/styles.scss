@@ -1,5 +1,9 @@
 @import '~@angular/material/prebuilt-themes/purple-green.css';
 
+svg {
+  fill: white;
+}
+
 ::-webkit-scrollbar {
   width: 0;
 }

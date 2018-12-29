@@ -2,14 +2,14 @@
 
   <mat-toolbar color="primary" class="example-toolbar">
     <!-- Left side of the tool bar -->
-    <button mat-flat-button color = "primary" (click)="snav.toggle()">
+    <span class = "fake-icon" mat-ripple (click)="snav.toggle()">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M0 0h24v24H0z" fill="none"></path>
         <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
       </svg>
-    </button>
+    </span>
 
-    <h1 class="example-app-name" style = "margin-top: 2px;">The UWICS</h1>
+    <h1 class="example-app-name">The UWICS</h1>
     <!---------------------------------->
 
     <!-- Right side of the tool bar -->
@@ -25,12 +25,12 @@
     </div>
 
     <!-- Drop down menu button, always visible -->
-    <button mat-flat-button color = "primary" [matMenuTriggerFor]="menu" (click) = "snav.close()">
+    <span mat-ripple class = "fake-icon" [matMenuTriggerFor]="menu" (click) = "snav.close()">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M0 0h24v24H0z" fill="none"></path>
         <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
       </svg>
-    </button>
+    </span>
 
     <!-- Main menu -->
     <mat-menu #menu="matMenu">
@@ -46,7 +46,6 @@
       <button mat-menu-item (click) = switch_theme($event)>UWICS Light</button>
       <button mat-menu-item (click) = switch_theme($event)>Candy Red</button>
       <button mat-menu-item (click) = switch_theme($event)>Gamer Green</button>
-      <!--<button mat-menu-item (click) = switch_theme($event)>Theme 5</button>-->
     </mat-menu>
 
   </mat-toolbar>

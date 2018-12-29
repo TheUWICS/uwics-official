@@ -16,6 +16,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { EventComponent } from './event/event.component';
 import {MatCardModule} from '@angular/material/card';
+import {MatRippleModule} from '@angular/material/core';
 import { ExecCardComponent } from './exec-card/exec-card.component';
 
 @NgModule({
@@ -36,6 +37,7 @@ import { ExecCardComponent } from './exec-card/exec-card.component';
     MatMenuModule,
     MatCardModule,
     MatExpansionModule,
+    MatRippleModule,
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],

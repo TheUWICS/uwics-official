@@ -2,6 +2,12 @@ mat-toolbar, mat-sidenav-container, button, svg{
   transition: all 0.5s ease;
 }
 
+.fake-icon {
+  height: 24px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
 #nav-logo {
   width: 175px;
   height: 175px;

@@ -28,9 +28,9 @@ mat-card {
   background-size: cover;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1150px) {
   .mat-card-content img {
-    width: 35vw;
+    width: 40vw;
   }
 }
 

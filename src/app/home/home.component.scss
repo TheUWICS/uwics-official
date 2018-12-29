@@ -6,7 +6,7 @@ mat-expansion-panel {
   position: relative;
   background: url('../../assets/images/header.webp') center top no-repeat;
   background-size: cover;
-  height: 800px;
+  height: 500px;
 }
 
 .welcome--text {
@@ -39,5 +39,9 @@ mat-expansion-panel {
   .mat-expansion-panel {
     width: 80vw;
     margin: 0 auto;
+  }
+
+  .welcome {
+    height: 800px;
   }
 }

@@ -6,11 +6,26 @@ $light-accent:  mat-palette($mat-amber, A200, A100, A400);
 $light-warn:    mat-palette($mat-deep-orange);
 $light-theme:   mat-light-theme($light-primary, $light-accent, $light-warn);
 
+// https://stackoverflow.com/questions/43919927/angular-material2-theming-how-to-set-app-background
+// Code template by Jake Stoeffler
+$light-background: map_get($mat-cyan, 100);
+$light-theme: map_merge(
+    $light-theme, (
+      background: map_merge(
+          map-get(
+              $light-theme, background),
+              (
+                background: $light-background
+              )
+          )
+      )
+);
+
 .uwics-light {
   @include angular-material-theme($light-theme);
 }
 
-$dark-primary: mat-palette($mat-purple);
+$dark-primary: mat-palette($mat-light-blue, 800);
 $dark-accent:  mat-palette($mat-amber, A200, A100, A400);
 $dark-warn:    mat-palette($mat-deep-orange);
 $dark-theme:   mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
@@ -24,6 +39,43 @@ $pink-accent:  mat-palette($mat-amber, A200, A100, A400);
 $pink-warn:    mat-palette($mat-deep-orange);
 $pink-theme:   mat-light-theme($pink-primary, $pink-accent, $pink-warn);
 
+$pink-background: map_get($mat-pink, 100);
+$pink-theme: map_merge(
+    $pink-theme, (
+    background: map_merge(
+        map-get(
+            $pink-theme, background),
+        (
+          background: $pink-background
+        )
+    )
+  )
+);
+
 .uwics-pink {
   @include angular-material-theme($pink-theme);
+}
+
+//#77B900 nVidia Logo color
+
+$gamer-primary: mat-palette($mat-light-green, A400);
+$gamer-accent:  mat-palette($mat-amber, A200, A100, A400);
+$gamer-warn:    mat-palette($mat-deep-orange);
+$gamer-theme:   mat-dark-theme($gamer-primary, $gamer-accent, $gamer-warn);
+//
+$gamer-background: map_get($mat-grey, 900);
+$gamer-theme: map_merge(
+    $gamer-theme, (
+    background: map_merge(
+        map-get(
+            $gamer-theme, background),
+        (
+          background: $gamer-background
+        )
+    )
+  )
+);
+
+.uwics-gamer {
+  @include angular-material-theme($gamer-theme);
 }

@@ -11,9 +11,10 @@ export class AppComponent implements OnDestroy {
   dark = true;
 
   theme_dict = {
-    'Dark': 'uwics-dark',
-    'Light': 'uwics-light',
-    'Pink': 'uwics-pink'
+    'UWICS Dark': 'uwics-dark',
+    'UWICS Light': 'uwics-light',
+    'Candy Red': 'uwics-pink',
+    'Gamer Green': 'uwics-gamer'
   };
 
   mobileQuery: MediaQueryList;

@@ -6,6 +6,26 @@ svg {
   fill: black;
 }
 
+.uwics-gamer snack-bar-container, .uwics-gamer .mat-simple-snackbar-action {
+  background: #76FF03 !important;
+  color: black !important;
+}
+
+.uwics-light snack-bar-container, .uwics-light .mat-simple-snackbar-action  {
+  background: #00BCD4 !important;
+  color: white !important;
+}
+
+.uwics-dark snack-bar-container, .uwics-dark .mat-simple-snackbar-action {
+  background: #0277bd !important;
+  color: white !important;
+}
+
+.uwics-pink snack-bar-container, .uwics-pink .mat-simple-snackbar-action {
+  background: #e91e63 !important;
+  color: white !important;
+}
+
 ::-webkit-scrollbar {
   width: 0;
 }

@@ -56,8 +56,6 @@ $pink-theme: map_merge(
   @include angular-material-theme($pink-theme);
 }
 
-//#77B900 nVidia Logo color
-
 $gamer-primary: mat-palette($mat-light-green, A400);
 $gamer-accent:  mat-palette($mat-amber, A200, A100, A400);
 $gamer-warn:    mat-palette($mat-deep-orange);
@@ -79,3 +77,5 @@ $gamer-theme: map_merge(
 .uwics-gamer {
   @include angular-material-theme($gamer-theme);
 }
+
+@include mat-snack-bar-theme($dark-theme);

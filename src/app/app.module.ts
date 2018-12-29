@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { ServiceWorkerModule } from '@angular/service-worker';
+import {ServiceWorkerModule, SwUpdate} from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { ExecsComponent } from './execs/execs.component';
 import {MatButtonModule} from '@angular/material/button';
@@ -17,6 +17,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import { EventComponent } from './event/event.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatRippleModule} from '@angular/material/core';
+import {MatSnackBar, MatSnackBarModule} from '@angular/material/snack-bar';
 import { ExecCardComponent } from './exec-card/exec-card.component';
 
 @NgModule({
@@ -38,10 +39,24 @@ import { ExecCardComponent } from './exec-card/exec-card.component';
     MatCardModule,
     MatExpansionModule,
     MatRippleModule,
+    MatSnackBarModule,
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(update: SwUpdate, snackbar: MatSnackBar) {
+    update.available.subscribe(() => {
+      console.log('Update Available');
+      const snack = snackbar.open('A new version of this application is available! :D', 'Reload');
+
+      snack.onAction().subscribe(() => {
+        window.location.reload(true);
+      });
+
+    });
+
+  }
+}

@@ -28,7 +28,8 @@
               "src/manifest.json"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/theme_test.scss"
             ],
             "scripts": [
             ]

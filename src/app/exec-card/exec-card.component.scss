@@ -1,7 +1,15 @@
+mat-card, mat-expansion-panel {
+  transition: all 0.5s ease;
+}
+
 .example-card {
   max-width: 400px;
   margin: 15px;
   box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+}
+
+.mat-card-actions button {
+  margin: 0 10px 0 10px;
 }
 
 .example-header-image {

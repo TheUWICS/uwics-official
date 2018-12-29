@@ -42,11 +42,11 @@
 
     <!-- Sub-menu showing themes -->
     <mat-menu #themes="matMenu">
-      <button mat-menu-item>Theme 1</button>
-      <button mat-menu-item>Theme 2</button>
-      <button mat-menu-item>Theme 3</button>
-      <button mat-menu-item>Theme 4</button>
-      <button mat-menu-item>Theme 5</button>
+      <button mat-menu-item (click) = switch_theme($event)>Dark</button>
+      <button mat-menu-item (click) = switch_theme($event)>Light</button>
+      <button mat-menu-item (click) = switch_theme($event)>Pink</button>
+      <button mat-menu-item (click) = switch_theme($event)>Theme 4</button>
+      <button mat-menu-item (click) = switch_theme($event)>Theme 5</button>
     </mat-menu>
 
   </mat-toolbar>

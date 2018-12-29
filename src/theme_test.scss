@@ -1,0 +1,29 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+$light-primary: mat-palette($mat-cyan);
+$light-accent:  mat-palette($mat-amber, A200, A100, A400);
+$light-warn:    mat-palette($mat-deep-orange);
+$light-theme:   mat-light-theme($light-primary, $light-accent, $light-warn);
+
+.uwics-light {
+  @include angular-material-theme($light-theme);
+}
+
+$dark-primary: mat-palette($mat-purple);
+$dark-accent:  mat-palette($mat-amber, A200, A100, A400);
+$dark-warn:    mat-palette($mat-deep-orange);
+$dark-theme:   mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
+
+.uwics-dark {
+  @include angular-material-theme($dark-theme);
+}
+
+$pink-primary: mat-palette($mat-pink);
+$pink-accent:  mat-palette($mat-amber, A200, A100, A400);
+$pink-warn:    mat-palette($mat-deep-orange);
+$pink-theme:   mat-light-theme($pink-primary, $pink-accent, $pink-warn);
+
+.uwics-pink {
+  @include angular-material-theme($pink-theme);
+}

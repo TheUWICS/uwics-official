@@ -1,3 +1,7 @@
+mat-toolbar, mat-sidenav-container, button{
+  transition: all 0.5s ease;
+}
+
 #nav-logo {
   width: 175px;
   height: 175px;
@@ -42,7 +46,6 @@ mat-sidenav {
 
 
 footer {
-  //color: mintcream !important;
   font-size: 14px;
 }
 

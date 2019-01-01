@@ -1,5 +1,5 @@
 <div (window:resize)="onResize($event)" style = "display: inline-block;" id = "wrapper" >
-  <mat-expansion-panel *ngIf = "small_screen; else cardinfo" style = "margin-top: 10px;">
+  <mat-expansion-panel *ngIf = "small_screen; else cardinfo">
     <mat-expansion-panel-header>
       <mat-panel-title>
         Exec name
@@ -14,25 +14,23 @@
   </mat-expansion-panel>
 
   <ng-template #cardinfo>
-    <mat-card class="example-card">
-      <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>Shiba Inu</mat-card-title>
-        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-      <mat-card-content>
-        <p>
-          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-          A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-          bred for hunting.
-        </p>
-      </mat-card-content>
-      <mat-card-actions>
-        <button color = "primary" mat-flat-button>LIKE</button>
-        <button color = "primary" mat-flat-button>SHARE</button>
-      </mat-card-actions>
-    </mat-card>
+    <div class="exec-info mat-typography">
+      <p *ngIf = "!small_screen" class = "mat-headline">Exec name</p>
+      <p *ngIf = "!small_screen">Exec position</p>
+      <div>
+        <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+      </div>
+
+      <p style = "margin-top: 10px;">
+        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+        bred for hunting.
+      </p>
+
+      <button color = "primary" mat-flat-button>LIKE</button>
+      <button color = "primary" mat-flat-button>SHARE</button>
+
+    </div>
   </ng-template>
 </div>
 

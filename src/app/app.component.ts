@@ -8,8 +8,6 @@ import {ChangeDetectorRef, Component, OnDestroy} from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent implements OnDestroy {
-  dark = true;
-
   theme_dict = {
     'UWICS Dark': 'uwics-dark',
     'UWICS Light': 'uwics-light',
@@ -33,20 +31,8 @@ export class AppComponent implements OnDestroy {
 
   switch_theme(event) {
     const wrapper = document.querySelector('html');
-    console.log(event.target.innerText);
     wrapper.classList.remove(wrapper.classList.item(0));
     wrapper.classList.add(this.theme_dict[event.target.innerText]);
   }
-
-  //   if (this.dark) {
-  //     wrapper.classList.add('uwics-light');
-  //     wrapper.classList.remove('uwics-dark');
-  //   } else {
-  //     wrapper.classList.add('uwics-dark');
-  //     wrapper.classList.remove('uwics-light');
-  //   }
-  //
-  //   this.dark = !this.dark;
-  // }
 
 }

@@ -7,6 +7,14 @@
   margin: 10px auto;
 }
 
+#pres-card {
+  padding: 15px;
+}
+
+#pres-card button {
+  margin: 0 10px 0 10px;
+}
+
 .all-execs {
   margin: 20px 0 20px 0;
 }
@@ -15,22 +23,17 @@ mat-card {
   transition: all 0.5s ease;
 }
 
-.mat-card-content img {
-  height: 400px;
+
+img {
+  width: 80vw;
+  height: 80vw;
+  border-radius: 50%;
 }
 
-.mat-card-actions button {
-  margin: 0 10px 0 10px;
-}
-
-.example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-  background-size: cover;
-}
-
-@media screen and (min-width: 1150px) {
-  .mat-card-content img {
-    width: 40vw;
+@media screen and (min-width: 540px) {
+  img {
+    width: 45vw;
+    height: 45vw;
   }
 }
 

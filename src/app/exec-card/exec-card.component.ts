@@ -12,11 +12,11 @@ export class ExecCardComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.small_screen = window.innerWidth <= 900;
+    this.small_screen = window.innerWidth <= 768;
   }
 
   onResize(event) {
-    this.small_screen = event.target.innerWidth <= 900;
+    this.small_screen = event.target.innerWidth <= 768;
   }
 
 }

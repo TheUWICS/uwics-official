@@ -1,0 +1,22 @@
+@import '~@angular/material/theming';
+$gamer-primary: mat-palette($mat-light-green, A400);
+$gamer-accent:  mat-palette($mat-amber, A200, A100, A400);
+$gamer-warn:    mat-palette($mat-deep-orange);
+$gamer-theme:   mat-dark-theme($gamer-primary, $gamer-accent, $gamer-warn);
+
+$gamer-background: map_get($mat-grey, 900);
+$gamer-theme: map_merge(
+    $gamer-theme, (
+    background: map_merge(
+        map-get(
+            $gamer-theme, background),
+        (
+          background: $gamer-background
+        )
+    )
+  )
+);
+
+.uwics-gamer {
+  @include angular-material-theme($gamer-theme);
+}

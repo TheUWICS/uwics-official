@@ -29,9 +29,7 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/uwics-light.scss",
-              "src/uwics-pink.scss",
-              "src/uwics-gamer.scss"
+              "src/uwics-light.scss"
             ],
             "scripts": [
             ]
@@ -90,9 +88,7 @@
             "karmaConfig": "src/karma.conf.js",
             "styles": [
               "src/styles.scss",
-              "src/uwics-light.scss",
-              "src/uwics-pink.scss",
-              "src/uwics-gamer.scss"
+              "src/uwics-light.scss"
             ],
             "scripts": [],
             "assets": [

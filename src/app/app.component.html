@@ -34,18 +34,10 @@
 
     <!-- Main menu -->
     <mat-menu #menu="matMenu">
-      <button mat-menu-item [matMenuTriggerFor]="themes">Toggle Theme</button>
+      <button mat-menu-item (click) = "toggle()">Toggle Theme</button>
       <button mat-menu-item>Report a bug</button>
       <button mat-menu-item>Have suggestions for us?</button>
       <button mat-menu-item>About</button>
-    </mat-menu>
-
-    <!-- Sub-menu showing themes -->
-    <mat-menu #themes="matMenu">
-      <button mat-menu-item (click) = switch_theme($event)>UWICS Dark</button>
-      <button mat-menu-item (click) = switch_theme($event)>UWICS Light</button>
-      <button mat-menu-item (click) = switch_theme($event)>Candy Red</button>
-      <button mat-menu-item (click) = switch_theme($event)>Gamer Green</button>
     </mat-menu>
 
   </mat-toolbar>

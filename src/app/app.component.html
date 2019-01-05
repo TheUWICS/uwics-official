@@ -37,7 +37,7 @@
       <button mat-menu-item (click) = "toggle()">Toggle Theme</button>
       <button mat-menu-item>Report a bug</button>
       <button mat-menu-item>Have suggestions for us?</button>
-      <button mat-menu-item>About</button>
+      <button mat-menu-item routerLink= "/about">About</button>
     </mat-menu>
 
   </mat-toolbar>
@@ -56,6 +56,7 @@
         <a mat-list-item routerLink= "." >Meetings and Events</a>
         <a mat-list-item routerLink= "." >Projects</a>
         <a mat-list-item routerLink= "." >Directions</a>
+        <a mat-list-item routerLink= "/about" >About</a>
         <mat-divider></mat-divider>
       </mat-nav-list>
     </mat-sidenav>

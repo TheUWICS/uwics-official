@@ -1,0 +1,26 @@
+<div id="page-content">
+  <div class="header">
+    <h1>About us</h1>
+  </div>
+
+  <mat-divider></mat-divider>
+
+  <div class="main-content">
+    <app-about-card
+      *ngFor = "let content of all_content"
+      [content] = "content"
+      [num] = "all_content.indexOf(content)">
+    </app-about-card>
+  </div>
+
+  <div class="history">
+    <h2>Our History</h2>
+    <p class = "grid-container" >
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    </p>
+  </div>
+
+</div>

@@ -1,0 +1,17 @@
+.main--content {
+  display: flex;
+  align-items: center;
+}
+
+.main--content p {
+  padding: 20px;
+}
+
+img {
+  max-width: 400px;
+}
+
+@media screen and (max-width: 768px) {
+  .main--content { display: block; }
+  .main--content p { padding: 0; }
+}

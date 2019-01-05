@@ -19,6 +19,8 @@ import {MatCardModule} from '@angular/material/card';
 import {MatRippleModule} from '@angular/material/core';
 import {MatSnackBar, MatSnackBarModule} from '@angular/material/snack-bar';
 import { ExecCardComponent } from './exec-card/exec-card.component';
+import { AboutPageComponent } from './about-page/about-page.component';
+import { AboutCardComponent } from './about-card/about-card.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { ExecCardComponent } from './exec-card/exec-card.component';
     HomeComponent,
     ExecsComponent,
     EventComponent,
-    ExecCardComponent
+    ExecCardComponent,
+    AboutPageComponent,
+    AboutCardComponent
   ],
   imports: [
     BrowserModule,

@@ -22,9 +22,10 @@ import { ExecCardComponent } from './exec-card/exec-card.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { AboutCardComponent } from './about-card/about-card.component';
 import { EventsPageComponent } from './events-page/events-page.component';
-// import {MatInputModule} from '@angular/material/input';
-// import {MatStepperModule} from '@angular/material/stepper';
-// import {ReactiveFormsModule} from '@angular/forms';
+import { FeedbackFormComponent } from './feedback-form/feedback-form.component';
+import {MatInputModule} from '@angular/material/input';
+import {ReactiveFormsModule} from '@angular/forms';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { EventsPageComponent } from './events-page/events-page.component';
     ExecCardComponent,
     AboutPageComponent,
     AboutCardComponent,
-    EventsPageComponent
+    EventsPageComponent,
+    FeedbackFormComponent
   ],
   imports: [
     BrowserModule,
@@ -47,17 +49,19 @@ import { EventsPageComponent } from './events-page/events-page.component';
     MatListModule,
     MatMenuModule,
     MatCardModule,
-    // ReactiveFormsModule,
+    ReactiveFormsModule,
     MatExpansionModule,
     MatRippleModule,
     MatSnackBarModule,
+    MatDialogModule,
     // MatStepperModule,
-    // MatInputModule,
+    MatInputModule,
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [FeedbackFormComponent]
 })
 export class AppModule {
   constructor(update: SwUpdate, snackbar: MatSnackBar) {

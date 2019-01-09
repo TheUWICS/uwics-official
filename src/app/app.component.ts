@@ -1,5 +1,7 @@
 import {MediaMatcher} from '@angular/cdk/layout';
 import {ChangeDetectorRef, Component, OnDestroy} from '@angular/core';
+import {FeedbackFormComponent} from './feedback-form/feedback-form.component';
+import {MatDialog} from '@angular/material';
 
 /** @title Responsive sidenav */
 @Component({
@@ -9,12 +11,10 @@ import {ChangeDetectorRef, Component, OnDestroy} from '@angular/core';
 })
 export class AppComponent implements OnDestroy {
   dark = true;
-
   mobileQuery: MediaQueryList;
-
   private _mobileQueryListener: () => void;
 
-  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
+  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher, public dialog: MatDialog) {
     this.mobileQuery = media.matchMedia('(max-width: 768px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
@@ -37,5 +37,9 @@ export class AppComponent implements OnDestroy {
     }
 
     this.dark = !this.dark;
+  }
+
+  openDialog(): void {
+    this.dialog.open(FeedbackFormComponent);
   }
 }

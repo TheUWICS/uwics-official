@@ -14,4 +14,5 @@ img {
 @media screen and (max-width: 768px) {
   .main--content { display: block; }
   .main--content p { padding: 0; }
+  img { display: none; }
 }

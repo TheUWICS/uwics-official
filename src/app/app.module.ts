@@ -21,6 +21,11 @@ import {MatSnackBar, MatSnackBarModule} from '@angular/material/snack-bar';
 import { ExecCardComponent } from './exec-card/exec-card.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { AboutCardComponent } from './about-card/about-card.component';
+import { EventsPageComponent } from './events-page/events-page.component';
+// import {MatInputModule} from '@angular/material/input';
+// import {MatStepperModule} from '@angular/material/stepper';
+// import {ReactiveFormsModule} from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +35,8 @@ import { AboutCardComponent } from './about-card/about-card.component';
     EventComponent,
     ExecCardComponent,
     AboutPageComponent,
-    AboutCardComponent
+    AboutCardComponent,
+    EventsPageComponent
   ],
   imports: [
     BrowserModule,
@@ -41,9 +47,12 @@ import { AboutCardComponent } from './about-card/about-card.component';
     MatListModule,
     MatMenuModule,
     MatCardModule,
+    // ReactiveFormsModule,
     MatExpansionModule,
     MatRippleModule,
     MatSnackBarModule,
+    // MatStepperModule,
+    // MatInputModule,
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],

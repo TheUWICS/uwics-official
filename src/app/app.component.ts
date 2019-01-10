@@ -1,7 +1,7 @@
 import {MediaMatcher} from '@angular/cdk/layout';
 import {ChangeDetectorRef, Component, OnDestroy} from '@angular/core';
-import {FeedbackFormComponent} from './feedback-form/feedback-form.component';
-import {MatDialog} from '@angular/material';
+import {MatDialog} from '@angular/material/dialog';
+import {WebsiteInfoComponent} from './website-info/website-info.component';
 
 /** @title Responsive sidenav */
 @Component({
@@ -40,6 +40,6 @@ export class AppComponent implements OnDestroy {
   }
 
   openDialog(): void {
-    this.dialog.open(FeedbackFormComponent);
+    this.dialog.open(WebsiteInfoComponent);
   }
 }

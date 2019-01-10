@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FeedbackFormComponent } from './feedback-form.component';
+import { WebsiteInfoComponent } from './website-info.component';
 
-describe('FeedbackFormComponent', () => {
-  let component: FeedbackFormComponent;
-  let fixture: ComponentFixture<FeedbackFormComponent>;
+describe('WebsiteInfoComponent', () => {
+  let component: WebsiteInfoComponent;
+  let fixture: ComponentFixture<WebsiteInfoComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FeedbackFormComponent ]
+      declarations: [ WebsiteInfoComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FeedbackFormComponent);
+    fixture = TestBed.createComponent(WebsiteInfoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

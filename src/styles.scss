@@ -2,7 +2,7 @@
 @include mat-core();
 
 $dark-primary: mat-palette($mat-light-blue, 800);
-$dark-accent:  mat-palette($mat-amber, A200, A100, A400);
+$dark-accent:  mat-palette($mat-grey, 800);
 $dark-warn:    mat-palette($mat-deep-orange);
 $dark-theme:   mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
 
@@ -10,17 +10,13 @@ $dark-theme:   mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
   @include angular-material-theme($dark-theme);
 }
 
-svg {
-  fill: white;
+.uwics-dark snack-bar-container, .uwics-dark .mat-simple-snackbar-action {
+  background: #0277bd !important;
+  color: white !important;
 }
 
-.uwics-gamer svg {
-  fill: black;
-}
-
-.uwics-gamer snack-bar-container, .uwics-gamer .mat-simple-snackbar-action {
-  background: #76FF03 !important;
-  color: black !important;
+.uwics-dark a {
+  color: white;
 }
 
 .uwics-light snack-bar-container, .uwics-light .mat-simple-snackbar-action  {
@@ -28,15 +24,11 @@ svg {
   color: white !important;
 }
 
-.uwics-dark snack-bar-container, .uwics-dark .mat-simple-snackbar-action {
-  background: #0277bd !important;
-  color: white !important;
+.uwics-light a {
+  color: black;
 }
 
-.uwics-pink snack-bar-container, .uwics-pink .mat-simple-snackbar-action {
-  background: #e91e63 !important;
-  color: white !important;
-}
+svg { fill: white; }
 
 ::-webkit-scrollbar {
   width: 0;

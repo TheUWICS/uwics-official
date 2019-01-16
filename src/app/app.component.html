@@ -59,9 +59,9 @@
       </mat-nav-list>
     </mat-sidenav>
 
-    <mat-sidenav-content>
+    <mat-sidenav-content [@fadeAnimation] = "getRouterOutletState(o)">
 
-      <router-outlet></router-outlet>
+      <router-outlet #o = "outlet"></router-outlet>
 
     </mat-sidenav-content>
 

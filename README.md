@@ -1,5 +1,5 @@
 # UWICS-Official - 
-This is the official repo for [The University of the West Indies](https://uwics-official.firebaseapp.com/) version 7.0.6.
+This is the official repo for The University of the West Indies Computing Society. Visit the website [here](https://uwics-official.firebaseapp.com/).
 
 ## List of pages
 1. Home - Introduction to club

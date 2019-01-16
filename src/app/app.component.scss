@@ -67,6 +67,18 @@ footer {
   color: #8bc34a;
 }
 
+:host {
+  display: flex;
+  overflow: hidden;
+  main {
+    position: relative;
+  }
+  /deep/ router-outlet ~ * {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
 
 @media screen and (max-width: 425px) {
   mat-sidenav {

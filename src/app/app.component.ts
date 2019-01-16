@@ -2,12 +2,14 @@ import {MediaMatcher} from '@angular/cdk/layout';
 import {ChangeDetectorRef, Component, OnDestroy} from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
 import {WebsiteInfoComponent} from './website-info/website-info.component';
+import {fadeAnimation} from '../fade.animation';
 
 /** @title Responsive sidenav */
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
+  animations: [fadeAnimation] // animations tutorial here: https://medium.com/@tanya/angular4-animated-route-transitions-b5b9667cd67c
 })
 export class AppComponent implements OnDestroy {
   dark = true;
@@ -41,5 +43,9 @@ export class AppComponent implements OnDestroy {
 
   openDialog(): void {
     this.dialog.open(WebsiteInfoComponent);
+  }
+
+  public getRouterOutletState(outlet) {
+    return outlet.isActivated ? outlet.activatedRoute : '';
   }
 }

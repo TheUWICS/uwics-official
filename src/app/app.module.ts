@@ -25,6 +25,7 @@ import {MatRippleModule} from '@angular/material/core';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatSnackBar, MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { ProjectCardComponent } from './project-card/project-card.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     AboutCardComponent,
     EventsPageComponent,
     WebsiteInfoComponent,
+    ProjectCardComponent,
   ],
   imports: [
     BrowserModule,

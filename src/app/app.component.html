@@ -21,7 +21,8 @@
       <button mat-flat-button color="primary" routerLink= "/execs" (click) = "snav.close()" >Executives</button>
       <button mat-flat-button color="primary" routerLink= "/events" (click) = "snav.close()" >Events</button>
       <button mat-flat-button color="primary" routerLink= "" (click) = "snav.close()">Projects</button>
-      <button mat-flat-button color="primary" routerLink= "" (click) = "snav.close()">Directions</button>
+      <button mat-flat-button color="primary" *ngIf = "isLoggedIn" (click) = "snav.close()">Log out</button>
+      <!--<button mat-flat-button color="primary" routerLink= "" (click) = "snav.close()">Directions</button>-->
     </div>
 
     <!-- Drop down menu button, always visible -->
@@ -54,7 +55,8 @@
         <a mat-list-item routerLink= "/execs" >Executives</a>
         <a mat-list-item routerLink= "/events" >Meetings and Events</a>
         <a mat-list-item routerLink= "." >Projects</a>
-        <a mat-list-item routerLink= "." >Directions</a>
+        <a mat-list-item routerLink= "/admin/auth" >Admin Portal</a>
+        <!--<a mat-list-item routerLink= "." >Directions</a>-->
         <mat-divider></mat-divider>
       </mat-nav-list>
     </mat-sidenav>

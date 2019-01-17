@@ -3,6 +3,7 @@ import {ChangeDetectorRef, Component, OnDestroy} from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
 import {WebsiteInfoComponent} from './website-info/website-info.component';
 import {fadeAnimation} from '../fade.animation';
+import {AuthService} from './auth.service';
 
 /** @title Responsive sidenav */
 @Component({
@@ -15,11 +16,13 @@ export class AppComponent implements OnDestroy {
   dark = true;
   mobileQuery: MediaQueryList;
   private _mobileQueryListener: () => void;
+  isLoggedIn: boolean;
 
-  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher, public dialog: MatDialog) {
+  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher, public dialog: MatDialog, public auth: AuthService) {
     this.mobileQuery = media.matchMedia('(max-width: 768px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
+    this.isLoggedIn = this.auth.isLoggedIn;
   }
 
   ngOnDestroy(): void {

@@ -13,6 +13,7 @@ import { ExecCardComponent } from './exec-card/exec-card.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { AboutCardComponent } from './about-card/about-card.component';
 import { EventsPageComponent } from './events-page/events-page.component';
+import { ProjectCardComponent } from './project-card/project-card.component';
 import { WebsiteInfoComponent } from './website-info/website-info.component';
 
 import {MatButtonModule} from '@angular/material/button';
@@ -25,7 +26,9 @@ import {MatRippleModule} from '@angular/material/core';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatSnackBar, MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import { ProjectCardComponent } from './project-card/project-card.component';
+import {MatInputModule} from '@angular/material/input';
+
+import {AdminModule} from './admin/admin.module';
 
 
 @NgModule({
@@ -44,6 +47,7 @@ import { ProjectCardComponent } from './project-card/project-card.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    AdminModule,
     MatButtonModule,
     MatToolbarModule,
     MatSidenavModule,
@@ -54,6 +58,7 @@ import { ProjectCardComponent } from './project-card/project-card.component';
     MatRippleModule,
     MatSnackBarModule,
     MatDialogModule,
+    MatInputModule,
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],

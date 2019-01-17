@@ -24,6 +24,7 @@
     "@angular/router": "^7.1.4",
     "@angular/service-worker": "^7.1.4",
     "core-js": "^2.5.4",
+    "firebase": "^5.7.3",
     "rxjs": "~6.3.3",
     "zone.js": "~0.8.26"
   },

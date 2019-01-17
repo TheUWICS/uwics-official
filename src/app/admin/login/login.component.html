@@ -7,18 +7,18 @@
       <form>
         <mat-form-field>
           <mat-label>Email Address</mat-label>
-          <input matInput placeholder="someone@example.com">
+          <input id = "email" matInput placeholder="someone@example.com">
         </mat-form-field>
 
         <mat-form-field>
           <mat-label>Enter password</mat-label>
-          <input matInput type = "password" placeholder="Password">
+          <input id = "pword" matInput type = "password" placeholder="Password">
         </mat-form-field>
       </form>
     </mat-card-content>
 
     <mat-card-actions>
-      <button color = "primary" mat-flat-button>Login</button>
+      <button color = "primary" mat-flat-button (click) = "login()">Login</button>
       <button color = "primary" mat-flat-button>Clear Fields</button>
     </mat-card-actions>
 

@@ -17,8 +17,6 @@ import { ProjectCardComponent } from './project-card/project-card.component';
 import { WebsiteInfoComponent } from './website-info/website-info.component';
 
 import {MatDialogModule} from '@angular/material/dialog';
-import {MatExpansionModule} from '@angular/material/expansion';
-import {MatListModule} from '@angular/material/list';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatRippleModule} from '@angular/material/core';
 import {MatSidenavModule} from '@angular/material/sidenav';
@@ -48,9 +46,7 @@ import {AppMaterialModule} from './app-material/app-material.module';
     AdminModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule,
     MatMenuModule,
-    MatExpansionModule,
     MatRippleModule,
     MatSnackBarModule,
     MatDialogModule,

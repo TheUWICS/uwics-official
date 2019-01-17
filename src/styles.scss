@@ -33,3 +33,16 @@ svg { fill: white; }
 ::-webkit-scrollbar {
   width: 0;
 }
+
+.mat-tab-labels {
+  justify-content: center;
+}
+
+strong {
+  font-weight: 500;
+}
+
+app-project-review .mat-expansion-panel-body {
+  padding: 0;
+}
+

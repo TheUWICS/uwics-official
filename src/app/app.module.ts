@@ -16,8 +16,6 @@ import { EventsPageComponent } from './events-page/events-page.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { WebsiteInfoComponent } from './website-info/website-info.component';
 
-import {MatButtonModule} from '@angular/material/button';
-import {MatCardModule} from '@angular/material/card';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatListModule} from '@angular/material/list';
@@ -26,9 +24,9 @@ import {MatRippleModule} from '@angular/material/core';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatSnackBar, MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatInputModule} from '@angular/material/input';
 
 import {AdminModule} from './admin/admin.module';
+import {AppMaterialModule} from './app-material/app-material.module';
 
 
 @NgModule({
@@ -48,17 +46,15 @@ import {AdminModule} from './admin/admin.module';
     BrowserModule,
     BrowserAnimationsModule,
     AdminModule,
-    MatButtonModule,
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
     MatMenuModule,
-    MatCardModule,
     MatExpansionModule,
     MatRippleModule,
     MatSnackBarModule,
     MatDialogModule,
-    MatInputModule,
+    AppMaterialModule,
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],

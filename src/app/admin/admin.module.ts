@@ -7,6 +7,9 @@ import { HomeComponent } from './home/home.component';
 import {AdminRoutingModule} from './admin-routing.module';
 import {AuthGuard} from '../auth.guard';
 import {AuthService} from '../auth.service';
+import {MatInputModule} from '@angular/material/input';
+import {AppMaterialModule} from '../app-material/app-material.module';
+
 
 @NgModule({
   declarations: [
@@ -22,6 +25,8 @@ import {AuthService} from '../auth.service';
   ],
   imports: [
     CommonModule,
+    AppMaterialModule,
+    MatInputModule,
     AdminRoutingModule
   ],
   providers: [AuthGuard, AuthService]

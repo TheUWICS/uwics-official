@@ -1,0 +1,35 @@
+.page {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.mat-card {
+  transition: all 0.3s;
+  padding-top: 0;
+  width: 30vw;
+  margin: auto;
+  text-align: center;
+}
+
+.mat-form-field {
+  width: 100%;
+}
+
+#logo-bg {
+  margin: 20px auto;
+  background: url("../../../assets/images/logo.png") center no-repeat;
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+}
+
+button {
+  margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .mat-card {
+    width: 65vw;
+  }
+}

@@ -25,6 +25,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 
 import {AdminModule} from './admin/admin.module';
 import {AppMaterialModule} from './app-material/app-material.module';
+import {ProjectPageComponent} from './project-page/project-page.component';
 
 
 @NgModule({
@@ -39,6 +40,7 @@ import {AppMaterialModule} from './app-material/app-material.module';
     EventsPageComponent,
     WebsiteInfoComponent,
     ProjectCardComponent,
+    ProjectPageComponent
   ],
   imports: [
     BrowserModule,

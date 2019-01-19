@@ -3,6 +3,9 @@ import {firebase} from '@firebase/app';
 import '@firebase/auth';
 import '@firebase/firestore';
 
+import { FirebaseFirestore } from '@firebase/firestore-types';
+import {ProjectInfo} from '../model';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -24,7 +27,9 @@ export class FireService {
     return this.app.auth();
   }
 
-  fb_firestore(): any {
+  fb_firestore(): FirebaseFirestore {
     return this.app.firestore();
   }
 }
+
+

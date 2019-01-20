@@ -8,6 +8,7 @@ import {AppMaterialModule} from '../app-material/app-material.module';
 import {WebsiteInfoComponent} from './website-info/website-info.component';
 import {TemplatesModule} from '../templates/templates.module';
 import {AboutPageComponent} from './about-page/about-page.component';
+import {PublicRoutingModule} from './public-routing.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {AboutPageComponent} from './about-page/about-page.component';
   imports: [
     CommonModule,
     TemplatesModule,
-    AppMaterialModule
+    AppMaterialModule,
+    PublicRoutingModule
   ],
   entryComponents: [WebsiteInfoComponent]
 })

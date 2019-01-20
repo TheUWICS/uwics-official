@@ -18,7 +18,6 @@ import {AdminModule} from './admin/admin.module';
 import {AppMaterialModule} from './app-material/app-material.module';
 import {PublicModule} from './public/public.module';
 import {TemplatesModule} from './templates/templates.module';
-import {PublicRoutingModule} from './public/public-routing.module';
 
 
 @NgModule({
@@ -39,7 +38,6 @@ import {PublicRoutingModule} from './public/public-routing.module';
     MatDialogModule,
     AppMaterialModule,
     AppRoutingModule,
-    PublicRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [],

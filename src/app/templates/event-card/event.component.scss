@@ -1,0 +1,15 @@
+.example-card {
+  max-width: 375px;
+  display: inline-block;
+  margin: 15px;
+  transition: all 0.5s ease;
+}
+
+.mat-card-actions button {
+  margin: 0 10px 0 10px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import {ProjectInfo} from '../model';
 import {FireService} from './fire.service';
 import { FirebaseFirestore } from '@firebase/firestore-types';
+import {ProjectInfo} from '../../model';
 
 @Injectable({
   providedIn: 'root'

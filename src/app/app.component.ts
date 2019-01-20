@@ -1,9 +1,9 @@
 import {MediaMatcher} from '@angular/cdk/layout';
 import {ChangeDetectorRef, Component, OnDestroy} from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
-import {WebsiteInfoComponent} from './website-info/website-info.component';
 import {fadeAnimation} from '../fade.animation';
-import {AuthService} from './auth.service';
+import {WebsiteInfoComponent} from './public/website-info/website-info.component';
+import {AuthService} from './services/auth.service';
 
 /** @title Responsive sidenav */
 @Component({

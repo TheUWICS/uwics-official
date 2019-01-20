@@ -5,11 +5,11 @@ import { ProjectReviewComponent } from './project-review/project-review.componen
 import { AdminEventsComponent } from './admin-events/admin-events.component';
 import { HomeComponent } from './home/home.component';
 import {AdminRoutingModule} from './admin-routing.module';
-import {AuthGuard} from '../auth.guard';
-import {AuthService} from '../auth.service';
 import {MatInputModule} from '@angular/material/input';
 import {AppMaterialModule} from '../app-material/app-material.module';
 import {MatTabsModule} from '@angular/material/tabs';
+import {AuthGuard} from '../services/auth.guard';
+import {AuthService} from '../services/auth.service';
 
 @NgModule({
   declarations: [

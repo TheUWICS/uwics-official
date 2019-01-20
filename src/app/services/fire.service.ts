@@ -4,7 +4,6 @@ import '@firebase/auth';
 import '@firebase/firestore';
 
 import { FirebaseFirestore } from '@firebase/firestore-types';
-import {ProjectInfo} from '../model';
 
 @Injectable({
   providedIn: 'root'

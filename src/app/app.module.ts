@@ -6,15 +6,6 @@ import { environment } from '../environments/environment';
 import {ServiceWorkerModule, SwUpdate} from '@angular/service-worker';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { ExecsComponent } from './execs/execs.component';
-import { EventComponent } from './event/event.component';
-import { ExecCardComponent } from './exec-card/exec-card.component';
-import { AboutPageComponent } from './about-page/about-page.component';
-import { AboutCardComponent } from './about-card/about-card.component';
-import { EventsPageComponent } from './events-page/events-page.component';
-import { ProjectCardComponent } from './project-card/project-card.component';
-import { WebsiteInfoComponent } from './website-info/website-info.component';
 
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatMenuModule} from '@angular/material/menu';
@@ -25,26 +16,20 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 
 import {AdminModule} from './admin/admin.module';
 import {AppMaterialModule} from './app-material/app-material.module';
-import {ProjectPageComponent} from './project-page/project-page.component';
+import {PublicModule} from './public/public.module';
+import {TemplatesModule} from './templates/templates.module';
+import {PublicRoutingModule} from './public/public-routing.module';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent,
-    ExecsComponent,
-    EventComponent,
-    ExecCardComponent,
-    AboutPageComponent,
-    AboutCardComponent,
-    EventsPageComponent,
-    WebsiteInfoComponent,
-    ProjectCardComponent,
-    ProjectPageComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    TemplatesModule,
+    PublicModule,
     AdminModule,
     MatToolbarModule,
     MatSidenavModule,
@@ -54,11 +39,12 @@ import {ProjectPageComponent} from './project-page/project-page.component';
     MatDialogModule,
     AppMaterialModule,
     AppRoutingModule,
+    PublicRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [WebsiteInfoComponent]
+
 })
 
 export class AppModule {

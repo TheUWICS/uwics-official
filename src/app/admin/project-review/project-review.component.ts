@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ProjectInfo} from '../../../model';
-import {DBService} from '../../db.service';
+import {DBService} from '../../services/db.service';
 
 @Component({
   selector: 'app-project-review',

@@ -1,6 +1,6 @@
 export interface ProjectInfo {
   title: string;
-  desc: string;
+  description: string;
   contributors: string[];
   links: string[];
 }

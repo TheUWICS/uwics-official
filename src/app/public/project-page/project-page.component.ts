@@ -8,15 +8,15 @@ import {DataService} from '../../services/data.service';
   styleUrls: ['./project-page.component.scss']
 })
 export class ProjectPageComponent implements OnInit {
-  admin = false;
-  projects: ProjectInfo[] = [];
+  approved: ProjectInfo[] = [];
 
   constructor(private db: DataService) { }
 
   ngOnInit() {
     console.log('fetching');
     this.db.fetchData('accepted_projects').then((data: ProjectInfo[]) => {
-      this.projects = data;
+      this.approved = data;
+      console.log(data);
     });
 
   }

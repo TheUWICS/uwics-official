@@ -17,7 +17,7 @@ import {PublicRoutingModule} from './public-routing.module';
     ProjectPageComponent,
     EventsPageComponent,
     WebsiteInfoComponent,
-    AboutPageComponent
+    AboutPageComponent,
   ],
   imports: [
     CommonModule,

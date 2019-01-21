@@ -1,0 +1,28 @@
+<h2 style = "margin-top: 0;"> {{project.title}} </h2>
+<mat-card-content>
+  <p>{{project.description}}</p>
+
+  <h3> Contributors </h3>
+
+  <mat-nav-list>
+  <mat-list-item *ngFor = "let cont of project.contributors">{{cont}}</mat-list-item>
+  </mat-nav-list>
+
+  <h3> Links </h3>
+
+  <mat-nav-list>
+  <mat-list-item *ngFor = "let link of project.links">{{link}}</mat-list-item>
+  </mat-nav-list>
+
+</mat-card-content>
+
+<mat-card-actions *ngIf = "admin; else publicActions">
+  <button color = "primary" mat-flat-button>Approve</button>
+  <button color = "warn" mat-flat-button>Send Feedback</button>
+</mat-card-actions>
+
+<ng-template #publicActions>
+  <mat-card-actions>
+    <button color = "primary" mat-flat-button (click) = close()>Close</button>
+  </mat-card-actions>
+</ng-template>

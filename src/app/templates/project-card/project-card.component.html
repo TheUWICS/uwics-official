@@ -1,3 +1,16 @@
-<p>
-  project-card works!
-</p>
+<mat-card>
+  <h3> {{project.title}} </h3>
+  <mat-card-content>
+    <p>{{project.description.slice(0, 200) + "... (Click below to expand)"}}</p>
+
+  </mat-card-content>
+
+  <mat-card-actions *ngIf = "admin; else publicActions">
+    <button color = "primary" mat-flat-button>Approve</button>
+    <button color = "warn" mat-flat-button>Send Feedback</button>
+  </mat-card-actions>
+
+  <ng-template #publicActions>
+    <button color = "primary" mat-flat-button (click) = openDialog()>Read more</button>
+  </ng-template>
+</mat-card>

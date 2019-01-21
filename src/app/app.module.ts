@@ -15,11 +15,12 @@ import {MatSnackBar, MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatToolbarModule} from '@angular/material/toolbar';
 
 import {AppMaterialModule} from './app-material/app-material.module';
-
+import {ProjectDialogComponent} from './templates/project-dialog/project-dialog.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProjectDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +37,7 @@ import {AppMaterialModule} from './app-material/app-material.module';
   ],
   providers: [],
   bootstrap: [AppComponent],
-
+  entryComponents: [ProjectDialogComponent]
 })
 
 export class AppModule {

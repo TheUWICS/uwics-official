@@ -43,26 +43,7 @@
 
   <div class="pending">
 
-    <mat-card *ngFor = "let project of pending">
-      <h4 mat-card-title> {{project.title}} </h4>
-      <mat-card-content>
-
-        <p>{{project.desc}}</p>
-
-        <h3>Contributors</h3>
-        <p><span *ngFor = "let author of project.contributors">{{author}}, </span></p>
-
-        <h3>Links</h3>
-        <mat-nav-list>
-          <mat-list-item *ngFor = "let link of project.links">{{link}}</mat-list-item>
-        </mat-nav-list>
-      </mat-card-content>
-
-      <mat-card-actions *ngIf = "admin">
-        <button color = "primary" mat-flat-button>Approve</button>
-        <button color = "warn" mat-flat-button>Send Feedback</button>
-      </mat-card-actions>
-    </mat-card>
+    <app-project-card *ngFor = "let projects of pending" [project] = "projects" [admin] = "true" ></app-project-card>
 
   </div>
 

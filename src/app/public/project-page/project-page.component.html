@@ -1,30 +1,14 @@
-<p>
-  project-page works!
-</p>
+<div class="header">
+  <h2>Members' Projects</h2>
+  <p>
+    The Computing Society is filled with talented members eager to embark on their journey into the world of coding and
+    software development. Below are some of the projects that they have done, either when they were learning something
+    new or building a project of their own.
+  </p>
+</div>
 
 <mat-divider></mat-divider>
 
 <div class="approved">
-
-  <mat-card *ngFor = "let project of projects">
-    <h4 mat-card-title> {{project.title}} </h4>
-    <mat-card-content>
-
-      <p>{{project.desc}}</p>
-
-      <h3>Contributors</h3>
-      <p><span *ngFor = "let author of project.contributors">{{author}}, </span></p>
-
-      <h3>Links</h3>
-      <mat-nav-list>
-        <mat-list-item *ngFor = "let link of project.links">{{link}}</mat-list-item>
-      </mat-nav-list>
-    </mat-card-content>
-
-    <mat-card-actions *ngIf = "admin">
-      <button color = "primary" mat-flat-button>Approve</button>
-      <button color = "warn" mat-flat-button>Send Feedback</button>
-    </mat-card-actions>
-  </mat-card>
-
+    <app-project-card *ngFor = "let projects of approved" [project]="projects" [admin]="false"></app-project-card>
 </div>

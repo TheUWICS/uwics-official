@@ -10,6 +10,7 @@ import {AppMaterialModule} from '../app-material/app-material.module';
 import {MatTabsModule} from '@angular/material/tabs';
 import {AuthGuard} from '../services/auth.guard';
 import {AuthService} from '../services/auth.service';
+import {TemplatesModule} from '../templates/templates.module';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import {AuthService} from '../services/auth.service';
     AppMaterialModule,
     MatInputModule,
     MatTabsModule,
+    TemplatesModule,
     AdminRoutingModule
   ],
   providers: [AuthGuard, AuthService]

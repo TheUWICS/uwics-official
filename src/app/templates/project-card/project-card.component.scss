@@ -1,0 +1,26 @@
+mat-card {
+  width: 30vw;
+  margin: 15px;
+  display: inline-block;
+}
+
+mat-card-content p {
+  overflow-y: auto;
+}
+
+mat-expansion-panel {
+  margin: 10px;
+}
+
+mat-card h3 {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  mat-card {
+    width: 80vw;
+  }
+
+  mat-card-content p {
+  }
+}

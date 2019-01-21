@@ -18,9 +18,9 @@
     <!-- Show button links to pages if the screen is large, else hide it -->
     <div *ngIf = "!mobileQuery.matches">
       <button mat-flat-button color="primary" routerLink= "" (click) = "snav.close()">Home</button>
-      <button mat-flat-button color="primary" routerLink= "/execs" (click) = "snav.close()" >Executives</button>
-      <button mat-flat-button color="primary" routerLink= "/events" (click) = "snav.close()" >Events</button>
-      <button mat-flat-button color="primary" routerLink= "/projects" (click) = "snav.close()">Projects</button>
+      <button mat-flat-button color="primary" routerLink= "/public/execs" (click) = "snav.close()" >Executives</button>
+      <button mat-flat-button color="primary" routerLink= "/public/events" (click) = "snav.close()" >Events</button>
+      <button mat-flat-button color="primary" routerLink= "/public/projects" (click) = "snav.close()">Projects</button>
       <button mat-flat-button color="primary" *ngIf = "isLoggedIn" (click) = "snav.close()">Log out</button>
       <!--<button mat-flat-button color="primary" routerLink= "" (click) = "snav.close()">Directions</button>-->
     </div>
@@ -52,10 +52,10 @@
 
       <mat-nav-list>
         <a mat-list-item routerLink= "" >Home</a>
-        <a mat-list-item routerLink= "/execs" >Executives</a>
-        <a mat-list-item routerLink= "/events" >Meetings and Events</a>
-        <a mat-list-item routerLink= "/projects" >Projects</a>
-        <a mat-list-item routerLink= "/admin/login" >Admin Portal</a>
+        <a mat-list-item routerLink= "/public/execs" >Executives</a>
+        <a mat-list-item routerLink= "/public/events" >Meetings and Events</a>
+        <a mat-list-item routerLink= "/public/projects" >Projects</a>
+        <a mat-list-item routerLink= "/admin" >Admin Portal</a>
         <!--<a mat-list-item routerLink= "." >Directions</a>-->
         <mat-divider></mat-divider>
       </mat-nav-list>

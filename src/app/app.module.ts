@@ -14,10 +14,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatSnackBar, MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatToolbarModule} from '@angular/material/toolbar';
 
-import {AdminModule} from './admin/admin.module';
 import {AppMaterialModule} from './app-material/app-material.module';
-import {PublicModule} from './public/public.module';
-import {TemplatesModule} from './templates/templates.module';
 
 
 @NgModule({
@@ -27,9 +24,6 @@ import {TemplatesModule} from './templates/templates.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    TemplatesModule,
-    PublicModule,
-    AdminModule,
     MatToolbarModule,
     MatSidenavModule,
     MatMenuModule,

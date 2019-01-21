@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ProjectInfo} from '../../../model';
-import {DBService} from '../../services/db.service';
+import {DataService} from '../../services/data.service';
 
 @Component({
   selector: 'app-project-page',
@@ -11,11 +11,13 @@ export class ProjectPageComponent implements OnInit {
   admin = false;
   projects: ProjectInfo[] = [];
 
-  constructor(private db: DBService) { }
+  constructor(private db: DataService) { }
 
   ngOnInit() {
-
-    this.projects = this.db.readAll('accepted_projects');
+    console.log('fetching');
+    this.db.fetchData('accepted_projects').then((data: ProjectInfo[]) => {
+      this.projects = data;
+    });
 
   }
 

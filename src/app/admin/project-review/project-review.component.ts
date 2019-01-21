@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ProjectInfo} from '../../../model';
-import {DBService} from '../../services/db.service';
+import {DataService} from '../../services/data.service';
 
 @Component({
   selector: 'app-project-review',
@@ -11,10 +11,12 @@ export class ProjectReviewComponent implements OnInit {
   admin = true;
   pending: ProjectInfo[];
 
-  constructor(private db: DBService) { }
+  constructor(private db: DataService) { }
 
   ngOnInit() {
-    this.pending = this.db.readAll('pending_projects');
+    this.db.fetchData('pending_projects').then((data: ProjectInfo[]) => {
+      this.pending = data;
+    });
   }
 
 }

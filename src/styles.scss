@@ -1,5 +1,12 @@
 @import '~@angular/material/theming';
+@import './styles/transition';
 @include mat-core();
+
+// TODO - Generalize card styles and place in separate file
+// TODO - Generalize expansion panel styles and place in separate file
+// TODO - Add in project functionality on the public view
+// TODO - Add in project approval on the admin view
+// TODO - Change links in ProjectInfo model from a string to a Link Model
 
 $dark-primary: mat-palette($mat-light-blue, 800);
 $dark-accent:  mat-palette($mat-grey, 800);
@@ -46,3 +53,6 @@ app-project-review .mat-expansion-panel-body {
   padding: 0;
 }
 
+button, svg {
+  transition: all 0.3s ease;
+}

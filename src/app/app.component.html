@@ -1,7 +1,7 @@
 <div class="example-container">
 
-  <mat-toolbar color="primary" class="example-toolbar">
-    <!-- Left side of the tool bar -->
+  <mat-toolbar color="primary" class="example-toolbar fade">
+
     <span class = "fake-icon" mat-ripple (click)="snav.toggle()">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M0 0h24v24H0z" fill="none"></path>
@@ -10,22 +10,21 @@
     </span>
 
     <h1 class="example-app-name">The UWICS</h1>
-    <!---------------------------------->
 
-    <!-- Right side of the tool bar -->
+
+
     <span class="example-fill-remaining-space"></span>
 
-    <!-- Show button links to pages if the screen is large, else hide it -->
+
     <div *ngIf = "!mobileQuery.matches">
       <button mat-flat-button color="primary" routerLink= "" (click) = "snav.close()">Home</button>
       <button mat-flat-button color="primary" routerLink= "/public/execs" (click) = "snav.close()" >Executives</button>
       <button mat-flat-button color="primary" routerLink= "/public/events" (click) = "snav.close()" >Events</button>
       <button mat-flat-button color="primary" routerLink= "/public/projects" (click) = "snav.close()">Projects</button>
       <button mat-flat-button color="primary" *ngIf = "isLoggedIn" (click) = "snav.close()">Log out</button>
-      <!--<button mat-flat-button color="primary" routerLink= "" (click) = "snav.close()">Directions</button>-->
     </div>
 
-    <!-- Drop down menu button, always visible -->
+
     <span mat-ripple class = "fake-icon" [matMenuTriggerFor]="menu" (click) = "snav.close()">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M0 0h24v24H0z" fill="none"></path>
@@ -33,7 +32,7 @@
       </svg>
     </span>
 
-    <!-- Main menu -->
+
     <mat-menu #menu="matMenu">
       <button mat-menu-item (click) = "toggle()">Toggle Theme</button>
       <button mat-menu-item routerLink= "/about">About Us</button>
@@ -42,10 +41,8 @@
 
   </mat-toolbar>
 
-  <!------------------------>
 
-  <!-- Sidenav contents -->
-  <mat-sidenav-container class="example-sidenav-container">
+  <mat-sidenav-container class="example-sidenav-container fade">
     <mat-sidenav #snav mode="over" (click) = "snav.close()"
                  [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
       <div id = "nav-logo"></div>
@@ -56,7 +53,6 @@
         <a mat-list-item routerLink= "/public/events" >Meetings and Events</a>
         <a mat-list-item routerLink= "/public/projects" >Projects</a>
         <a mat-list-item routerLink= "/admin" >Admin Portal</a>
-        <!--<a mat-list-item routerLink= "." >Directions</a>-->
         <mat-divider></mat-divider>
       </mat-nav-list>
     </mat-sidenav>

@@ -1,8 +1,9 @@
-.example-card {
+@import '../../../styles/transition';
+
+.mat-card {
   max-width: 375px;
   display: inline-block;
   margin: 15px;
-  transition: all 0.5s ease;
 }
 
 .mat-card-actions button {

@@ -20,7 +20,10 @@ export class ProjectCardComponent implements OnInit {
   openDialog(): void {
     this.dialog.open(ProjectDialogComponent, {
       width: '65vw',
-      data: this.project
+      data: {
+        project: this.project,
+        admin: this.admin
+      }
     });
   }
 

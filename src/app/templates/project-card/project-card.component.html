@@ -5,12 +5,9 @@
 
   </mat-card-content>
 
-  <mat-card-actions *ngIf = "admin; else publicActions">
-    <button color = "primary" mat-flat-button>Approve</button>
-    <button color = "warn" mat-flat-button>Send Feedback</button>
-  </mat-card-actions>
-
-  <ng-template #publicActions>
+  <mat-card-actions >
     <button color = "primary" mat-flat-button (click) = openDialog()>Read more</button>
-  </ng-template>
+    <button *ngIf = "admin" color = "primary" mat-flat-button>Approve</button>
+    <button *ngIf = "admin" color = "warn" mat-flat-button>Send Feedback</button>
+  </mat-card-actions>
 </mat-card>

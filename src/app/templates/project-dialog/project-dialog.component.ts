@@ -13,7 +13,6 @@ export class ProjectDialogComponent implements OnInit {
               @Inject(MAT_DIALOG_DATA) public project: ProjectInfo) { }
 
   ngOnInit() {
-    console.log(this.project);
   }
 
   close() {

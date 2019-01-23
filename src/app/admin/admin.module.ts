@@ -13,6 +13,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatListModule} from '@angular/material/list';
 import {SharedModule} from '../shared/shared.module';
+import {SharedProjectModule} from '../shared-project/shared-project.module';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import {SharedModule} from '../shared/shared.module';
   ],
   imports: [
     CommonModule,
+    SharedProjectModule,
     MatCardModule,
     MatExpansionModule,
     MatListModule,

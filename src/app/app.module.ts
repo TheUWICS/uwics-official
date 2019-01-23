@@ -15,10 +15,10 @@ import {MatSnackBar, MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatToolbarModule} from '@angular/material/toolbar';
 
 import {WebsiteInfoComponent} from './website-info/website-info.component';
-import {ProjectDialogComponent} from './project-page/project-dialog/project-dialog.component';
 import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
+import {ProjectDialogComponent} from './shared-project/project-dialog/project-dialog.component';
 
 @NgModule({
   declarations: [

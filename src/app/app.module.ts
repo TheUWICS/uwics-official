@@ -20,7 +20,7 @@ import {ProjectDialogComponent} from './templates/project-dialog/project-dialog.
 @NgModule({
   declarations: [
     AppComponent,
-    ProjectDialogComponent
+    ProjectDialogComponent,
   ],
   imports: [
     BrowserModule,

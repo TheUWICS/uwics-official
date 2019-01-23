@@ -3,8 +3,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'public',
-    loadChildren: './public/public.module#PublicModule',
+    path: 'public/home',
+    loadChildren: './home-page/home-page.module#HomePageModule',
+  },
+  {
+    path: 'public/execs',
+    loadChildren: './exec-page/exec-page.module#ExecPageModule'
   },
   {
     path: 'admin',
@@ -12,7 +16,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/public',
+    redirectTo: '/public/home',
     pathMatch: 'full'
   }
 ];

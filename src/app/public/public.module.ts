@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {HomeComponent} from './home/home.component';
-import {ExecsComponent} from './execs/execs.component';
 import {ProjectPageComponent} from './project-page/project-page.component';
 import {EventsPageComponent} from './events-page/events-page.component';
 import {AppMaterialModule} from '../app-material/app-material.module';
@@ -12,8 +10,6 @@ import {PublicRoutingModule} from './public-routing.module';
 
 @NgModule({
   declarations: [
-    HomeComponent,
-    ExecsComponent,
     ProjectPageComponent,
     EventsPageComponent,
     WebsiteInfoComponent,

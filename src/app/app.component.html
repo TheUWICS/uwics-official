@@ -11,10 +11,7 @@
 
     <h1 class="example-app-name">The UWICS</h1>
 
-
-
     <span class="example-fill-remaining-space"></span>
-
 
     <div *ngIf = "!mobileQuery.matches">
       <button mat-flat-button color="primary" routerLink= "" (click) = "snav.close()">Home</button>
@@ -24,7 +21,6 @@
       <button mat-flat-button color="primary" *ngIf = "isLoggedIn" (click) = "snav.close()">Log out</button>
     </div>
 
-
     <span mat-ripple class = "fake-icon" [matMenuTriggerFor]="menu" (click) = "snav.close()">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M0 0h24v24H0z" fill="none"></path>
@@ -32,15 +28,13 @@
       </svg>
     </span>
 
-
     <mat-menu #menu="matMenu">
       <button mat-menu-item (click) = "toggle()">Toggle Theme</button>
-      <button mat-menu-item routerLink= "/about">About Us</button>
+      <button mat-menu-item routerLink= "/public/about">About Us</button>
       <button mat-menu-item (click) = "openDialog()">Website Info</button>
     </mat-menu>
 
   </mat-toolbar>
-
 
   <mat-sidenav-container class="example-sidenav-container fade">
     <mat-sidenav #snav mode="over" (click) = "snav.close()"
@@ -64,7 +58,4 @@
     </mat-sidenav-content>
 
   </mat-sidenav-container>
-  <!------------------------------->
 </div>
-
-

@@ -6,18 +6,20 @@ import { AdminEventsComponent } from './admin-events/admin-events.component';
 import { HomeComponent } from './home/home.component';
 import {AdminRoutingModule} from './admin-routing.module';
 import {MatInputModule} from '@angular/material/input';
-import {AppMaterialModule} from '../app-material/app-material.module';
 import {MatTabsModule} from '@angular/material/tabs';
 import {AuthGuard} from '../services/auth.guard';
 import {AuthService} from '../services/auth.service';
-import {TemplatesModule} from '../templates/templates.module';
+import {MatCardModule} from '@angular/material/card';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatListModule} from '@angular/material/list';
+import {SharedModule} from '../shared/shared.module';
 
 @NgModule({
   declarations: [
     LoginComponent,
     ProjectReviewComponent,
     AdminEventsComponent,
-    HomeComponent
+    HomeComponent,
   ],
   exports: [
     LoginComponent,
@@ -26,10 +28,12 @@ import {TemplatesModule} from '../templates/templates.module';
   ],
   imports: [
     CommonModule,
-    AppMaterialModule,
+    MatCardModule,
+    MatExpansionModule,
+    MatListModule,
     MatInputModule,
     MatTabsModule,
-    TemplatesModule,
+    SharedModule,
     AdminRoutingModule
   ],
   providers: [AuthGuard, AuthService]

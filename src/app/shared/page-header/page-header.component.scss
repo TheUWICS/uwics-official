@@ -10,6 +10,11 @@
   color: white;
 }
 
+.welcome--text p {
+  width: 75%;
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 768px) {
   .welcome { height: 650px; }
 }

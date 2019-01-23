@@ -14,14 +14,14 @@
 }
 
 img {
-  width: 80%;
-  height: 80%;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
 }
 
 @media screen and (min-width: 540px) {
   img {
-    width: 45vw;
-    height: 45vw;
+    width: 600px;
+    height: 600px;
   }
 }

@@ -1,0 +1,14 @@
+<div id="page-content">
+  <app-page-header [text]="header_text" [img_link]="link" ></app-page-header>
+
+  <mat-divider></mat-divider>
+
+  <div class="main-content">
+    <app-about-card
+      *ngFor = "let content of all_content"
+      [content] = "content"
+      [num] = "all_content.indexOf(content)">
+    </app-about-card>
+  </div>
+
+</div>

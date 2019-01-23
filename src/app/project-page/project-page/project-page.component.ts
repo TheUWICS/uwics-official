@@ -13,10 +13,8 @@ export class ProjectPageComponent implements OnInit {
   constructor(private db: DataService) { }
 
   ngOnInit() {
-    console.log('fetching');
     this.db.fetchData('accepted_projects').then((data: ProjectInfo[]) => {
       this.approved = data;
-      console.log(data);
     });
 
   }

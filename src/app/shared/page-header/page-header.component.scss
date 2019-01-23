@@ -1,0 +1,16 @@
+.welcome {
+  position: relative;
+  height: 400px;
+}
+
+.welcome--text {
+  padding: 10px;
+  background-color: #424242;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .welcome { height: 650px; }
+}
+

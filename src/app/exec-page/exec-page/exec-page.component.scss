@@ -1,0 +1,27 @@
+#pres-card {
+  padding: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#pres-card button {
+  margin: 0 10px 0 10px;
+}
+
+.all-execs {
+  margin: 20px 0 20px 0;
+  text-align: center;
+}
+
+img {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 540px) {
+  img {
+    width: 45vw;
+    height: 45vw;
+  }
+}

@@ -1,0 +1,89 @@
+<app-page-header [img_link] = link [text] = header_text></app-page-header>
+
+<div class="meetings">
+
+  <div class="meetings--text">
+    <h1>Club Meetings</h1>
+    <p style = "font-weight: 600">
+      Meeting location: FST 2nd Floor, Computer Science Lab 2 <br>
+      Meeting time: 2:00pm - 4:00pm
+    </p>
+  </div>
+
+  <div class = "meetings--content">
+    <app-event-card></app-event-card>
+    <app-event-card></app-event-card>
+    <app-event-card></app-event-card>
+  </div>
+
+  <br>
+  <button mat-raised-button color = "primary">
+    Want to see all our past sessions?
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+    </svg>
+  </button>
+</div>
+
+<mat-divider></mat-divider>
+
+<div class="morals">
+  <div class="morals--header">
+    <h1>What we stand for</h1>
+    <p> Sometimes, we focus on more than technology</p>
+  </div>
+
+  <div class="morals--content">
+
+    <mat-expansion-panel class = "fade">
+      <mat-expansion-panel-header>
+        Title: subtitle
+      </mat-expansion-panel-header>
+
+        Lorem ipsum dolor sit amet, tempor expetendis eum no, vim te errem graecis probatus. Ut duo audire adipiscing
+        vituperatoribus. Mea at eius postea fabellas, ei prompta mandamus quo. Ad cum quem tollit, justo oblique
+        cum no. Ex nam convenire constituam, fuisset phaedrum ei sed.
+    </mat-expansion-panel>
+
+    <mat-expansion-panel class = "fade">
+      <mat-expansion-panel-header>
+        Title: subtitle
+      </mat-expansion-panel-header>
+
+        Lorem ipsum dolor sit amet, tempor expetendis eum no, vim te errem graecis probatus. Ut duo audire adipiscing
+        vituperatoribus. Mea at eius postea fabellas, ei prompta mandamus quo. Ad cum quem tollit, justo oblique
+        cum no. Ex nam convenire constituam, fuisset phaedrum ei sed.
+    </mat-expansion-panel>
+
+    <mat-expansion-panel class = "fade">
+      <mat-expansion-panel-header>
+        Title: subtitle
+      </mat-expansion-panel-header>
+
+        Lorem ipsum dolor sit amet, tempor expetendis eum no, vim te errem graecis probatus. Ut duo audire adipiscing
+        vituperatoribus. Mea at eius postea fabellas, ei prompta mandamus quo. Ad cum quem tollit, justo oblique
+        cum no. Ex nam convenire constituam, fuisset phaedrum ei sed.
+    </mat-expansion-panel>
+
+    <mat-expansion-panel class = "fade">
+      <mat-expansion-panel-header>
+        Title: subtitle
+      </mat-expansion-panel-header>
+
+        Lorem ipsum dolor sit amet, tempor expetendis eum no, vim te errem graecis probatus. Ut duo audire adipiscing
+        vituperatoribus. Mea at eius postea fabellas, ei prompta mandamus quo. Ad cum quem tollit, justo oblique
+        cum no. Ex nam convenire constituam, fuisset phaedrum ei sed.
+    </mat-expansion-panel>
+
+  </div>
+
+  <br>
+  <button style = "margin-top: 15px;" routerLink="/about" mat-raised-button color = "primary">
+    More about us
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+    </svg>
+  </button>
+</div>

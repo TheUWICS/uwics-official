@@ -1,0 +1,28 @@
+@import '../../../styles/transition';
+
+mat-expansion-panel {
+  border-radius: 0;
+}
+
+.meetings, .morals {
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+.meetings--text{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 16px 0 16px;
+}
+
+.mat-expansion-panel p{
+  width: 75%;
+  margin: 10px auto;
+}
+
+@media screen and (min-width: 768px) {
+  .mat-expansion-panel {
+    width: 80vw;
+    margin: 0 auto;
+  }
+}

@@ -7,7 +7,7 @@ import {HeaderText} from '../../../model';
   styleUrls: ['./exec-page.component.scss']
 })
 export class ExecPageComponent implements OnInit {
-  link = 'url(\'../../assets/images/x.png\') center top no-repeat';
+  link = 'url(\'../../assets/images/execs.jpeg\') center top no-repeat';
   header_text: HeaderText;
 
   constructor() {

@@ -1,6 +1,6 @@
 .welcome {
   position: relative;
-  height: 400px;
+  height: 200px;
 }
 
 .welcome--text {
@@ -16,6 +16,14 @@
 }
 
 @media screen and (min-width: 768px) {
+  .welcome { height: 450px; }
+}
+
+@media screen and (min-width: 1366px) {
   .welcome { height: 650px; }
+}
+
+@media screen and (min-width: 2000px) {
+  .welcome { height: 800px; }
 }
 

@@ -1,7 +1,6 @@
 import {MediaMatcher} from '@angular/cdk/layout';
 import {ChangeDetectorRef, Component, OnDestroy} from '@angular/core';
 import {fadeAnimation} from '../fade.animation';
-import {AuthService} from './services/auth.service';
 
 /** @title Responsive sidenav */
 @Component({
@@ -14,13 +13,11 @@ export class AppComponent implements OnDestroy {
   dark = true;
   mobileQuery: MediaQueryList;
   private _mobileQueryListener: () => void;
-  isLoggedIn: boolean;
 
-  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher, public auth: AuthService) {
+  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
     this.mobileQuery = media.matchMedia('(max-width: 768px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
-    this.isLoggedIn = this.auth.isLoggedIn;
   }
 
   ngOnDestroy(): void {
@@ -36,7 +33,6 @@ export class AppComponent implements OnDestroy {
     } else {
       wrapper.classList.remove(wrapper.classList.item(0));
       wrapper.classList.add('uwics-dark');
-
     }
 
     this.dark = !this.dark;

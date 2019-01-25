@@ -15,6 +15,7 @@ import {MatListModule} from '@angular/material/list';
 import {SharedModule} from '../shared/shared.module';
 import {SharedProjectModule} from '../shared-project/shared-project.module';
 import {MatButtonModule} from '@angular/material/button';
+import {DataService} from '../services/data.service';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,6 @@ import {MatButtonModule} from '@angular/material/button';
     SharedModule,
     AdminRoutingModule
   ],
-  providers: [AuthGuard, AuthService]
+  providers: [AuthGuard, AuthService, DataService]
 })
 export class AdminModule { }

@@ -8,6 +8,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {SharedModule} from '../shared/shared.module';
 import {SharedProjectModule} from '../shared-project/shared-project.module';
+import {DataService} from '../services/data.service';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import {SharedProjectModule} from '../shared-project/shared-project.module';
     MatButtonModule,
     MatDividerModule,
     ProjectPageRoutingModule
-  ]
+  ],
+  providers: [DataService]
 })
 export class ProjectPageModule { }

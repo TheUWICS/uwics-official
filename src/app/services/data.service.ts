@@ -1,20 +1,27 @@
 import { Injectable } from '@angular/core';
-import {FireService} from './fire.service';
+
+import {firebase} from '@firebase/app';
+import '@firebase/firestore';
 import { FirebaseFirestore } from '@firebase/firestore-types';
-import {ProjectInfo} from '../../model';
 import { QueryDocumentSnapshot } from '@firebase/firestore-types';
+import {ProjectInfo} from '../../model';
 
-@Injectable({
-  providedIn: 'root'
-})
-
+@Injectable()
 export class DataService {
   db: FirebaseFirestore;
 
-  constructor(fire: FireService) {
+  constructor() {
 
-
-    this.db = fire.fb_firestore();
+    this.db = firebase.apps.length === 0
+      ? firebase.initializeApp({
+          apiKey: 'AIzaSyDOrcuf_DKe9BKzDdeZ3Tla1SDR_NbiUuw',
+          authDomain: 'uwics-official.firebaseapp.com',
+          databaseURL: 'https://uwics-official.firebaseio.com',
+          projectId: 'uwics-official',
+          storageBucket: 'uwics-official.appspot.com',
+          messagingSenderId: '714702661898'
+        }).firestore()
+      : firebase.apps[0].firestore();
   }
 
   extractDocuments(docs: QueryDocumentSnapshot[]) {

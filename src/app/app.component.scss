@@ -1,5 +1,3 @@
-
-
 .fake-icon {
   height: 24px;
   padding: 10px;
@@ -29,45 +27,20 @@
   z-index: 2;
 }
 
-h1.example-app-name {
-  margin-left: 8px;
-}
+h1.example-app-name { margin-left: 8px; }
+.example-sidenav-container { flex: 1; }
+.example-is-mobile .example-sidenav-container { flex: 1 0 auto; }
+.example-fill-remaining-space { flex: 1 1 auto; }
 
-.example-sidenav-container {
-  flex: 1;
-}
-
-.example-is-mobile .example-sidenav-container {
-  flex: 1 0 auto;
-}
-
-.example-fill-remaining-space {
-  flex: 1 1 auto;
-}
-mat-sidenav {
-  width: 300px;
-}
-
-
-footer {
-  font-size: 14px;
-}
+mat-sidenav { width: 300px; }
 
 :host {
-  display: flex;
-  overflow: hidden;
-  main {
-    position: relative;
-  }
   /deep/ router-outlet ~ * {
     position: absolute;
     width: 100%;
-    height: 100%;
   }
 }
 
 @media screen and (max-width: 425px) {
-  mat-sidenav {
-    width: 55vw;
-  }
+  mat-sidenav { width: 55vw; }
 }

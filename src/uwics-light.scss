@@ -2,26 +2,15 @@
 
 $light-primary: mat-palette($mat-cyan);
 $light-accent:  mat-palette($mat-cyan, 200);
-$light-warn:    mat-palette($mat-deep-orange);
-$light-theme:   mat-light-theme($light-primary, $light-accent, $light-warn);
+$light-theme:   mat-light-theme($light-primary, $light-accent);
 
 // https://stackoverflow.com/questions/43919927/angular-material2-theming-how-to-set-app-background
 // Code template by Jake Stoeffler
 $light-background: map_get($mat-cyan, 100);
 $light-theme: map_merge(
     $light-theme, (
-    background: map_merge(
-        map-get(
-            $light-theme, background),
-        (
-          background: $light-background
-        )
-    )
+    background: map_merge(map-get($light-theme, background), (background: $light-background ))
   )
 );
 
-.uwics-light {
-  @include angular-material-theme($light-theme);
-}
-
-
+.uwics-light { @include angular-material-theme($light-theme); }

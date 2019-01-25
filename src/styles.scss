@@ -2,15 +2,9 @@
 @import './styles/transition';
 @include mat-core();
 
-// TODO - Fix issues on Chrome Lighthouse
-// TODO - Add in project functionality on the public view
-// TODO - Add in project approval on the admin view
-// TODO - Change links in ProjectInfo model from a string to a Link Model
-
 $dark-primary: mat-palette($mat-light-blue, 800);
 $dark-accent:  mat-palette($mat-grey, 800);
-$dark-warn:    mat-palette($mat-deep-orange);
-$dark-theme:   mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
+$dark-theme:   mat-dark-theme($dark-primary, $dark-accent);
 
 .uwics-dark {
   @include angular-material-theme($dark-theme);
@@ -25,7 +19,7 @@ $dark-theme:   mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
   color: white;
 }
 
-.uwics-light snack-bar-container, .uwics-light .mat-simple-snackbar-action  {
+.uwics-light snack-bar-container, .uwics-light .mat-simple-snackbar-action {
   background: #00BCD4 !important;
   color: white !important;
 }
@@ -34,14 +28,18 @@ $dark-theme:   mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
   color: black;
 }
 
+.uwics-light app-footer .content {
+  background-color: #00BCD4;
+}
+
 svg { fill: white; }
 
 ::-webkit-scrollbar {
   width: 0;
 }
 
-.mat-tab-labels {
-  justify-content: center;
+.mat-card-actions {
+  margin-bottom: 0 !important;
 }
 
 strong {

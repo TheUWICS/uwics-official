@@ -7,24 +7,21 @@ import {ServiceWorkerModule, SwUpdate} from '@angular/service-worker';
 
 import { AppComponent } from './app.component';
 
-import {MatDialogModule} from '@angular/material/dialog';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatRippleModule} from '@angular/material/core';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatSnackBar, MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatToolbarModule} from '@angular/material/toolbar';
 
-import {WebsiteInfoComponent} from './website-info/website-info.component';
 import {MatListModule} from '@angular/material/list';
-import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
-import {ProjectDialogComponent} from './shared-project/project-dialog/project-dialog.component';
+
+// TODO Lazy Load the Admin module only after user has been authenticated
+// TODO Lazy Load firebase code (auth and firestore in admin module and firestore on public page module)
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProjectDialogComponent,
-    WebsiteInfoComponent
   ],
   imports: [
     BrowserModule,
@@ -32,18 +29,15 @@ import {ProjectDialogComponent} from './shared-project/project-dialog/project-di
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule,
     MatButtonModule,
     MatMenuModule,
     MatRippleModule,
     MatSnackBarModule,
-    MatDialogModule,
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [],
-  bootstrap: [AppComponent],
-  entryComponents: [ProjectDialogComponent]
+  bootstrap: [AppComponent]
 })
 
 export class AppModule {

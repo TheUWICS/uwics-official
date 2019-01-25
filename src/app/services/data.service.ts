@@ -9,10 +9,11 @@ import { QueryDocumentSnapshot } from '@firebase/firestore-types';
 })
 
 export class DataService {
-
   db: FirebaseFirestore;
 
   constructor(fire: FireService) {
+
+
     this.db = fire.fb_firestore();
   }
 

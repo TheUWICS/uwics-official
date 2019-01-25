@@ -20,7 +20,7 @@
     "@angular/material": "^7.2.0",
     "@angular/platform-browser": "^7.1.4",
     "@angular/platform-browser-dynamic": "^7.1.4",
-    "@angular/pwa": "^0.12.2",
+    "@angular/pwa": "^0.12.3",
     "@angular/router": "^7.1.4",
     "@angular/service-worker": "^7.1.4",
     "@firebase/app": "^0.3.7",

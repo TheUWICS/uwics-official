@@ -1,5 +1,6 @@
 <div id="page-content">
   <app-page-header [text]="header_text" [img_link]="link" ></app-page-header>
+  <button style = "margin: 10px;" mat-raised-button color = "primary" (click) = "openDialog()"> Website Info</button>
 
   <mat-divider></mat-divider>
 
@@ -10,5 +11,6 @@
       [num] = "all_content.indexOf(content)">
     </app-about-card>
   </div>
+
 
 </div>

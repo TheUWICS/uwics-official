@@ -1,4 +1,7 @@
 <h2 style = "margin-top: 0;"> {{data.project.title}} </h2>
+
+<!-- TODO - Properly style the Projects Dialog Page -->
+
 <mat-card-content>
   <p style = "font-size: 16px;">{{data.project.description}}</p>
 
@@ -23,6 +26,6 @@
 
 <ng-template #publicActions>
   <mat-card-actions>
-    <button color = "primary" mat-flat-button (click) = close()>Close</button>
+    <button color = "primary" mat-flat-button (click) = close() tabindex="-1">Close</button>
   </mat-card-actions>
 </ng-template>

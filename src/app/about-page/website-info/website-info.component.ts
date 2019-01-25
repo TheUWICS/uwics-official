@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MatDialogRef} from '@angular/material';
-import {environment} from '../../environments/environment';
+import {MatDialogRef} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-website-info',
@@ -14,7 +13,6 @@ export class WebsiteInfoComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.version_num = environment.version_num;
   }
 
   close() {

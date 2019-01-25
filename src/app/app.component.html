@@ -31,7 +31,6 @@
     <mat-menu #menu="matMenu">
       <button mat-menu-item (click) = "toggle()">Toggle Theme</button>
       <button mat-menu-item routerLink= "/public/about">About Us</button>
-      <button mat-menu-item (click) = "openDialog()">Website Info</button>
     </mat-menu>
 
   </mat-toolbar>
@@ -52,10 +51,7 @@
     </mat-sidenav>
 
     <mat-sidenav-content [@fadeAnimation] = "getRouterOutletState(o)">
-
       <router-outlet #o = "outlet"></router-outlet>
-
     </mat-sidenav-content>
-
   </mat-sidenav-container>
 </div>

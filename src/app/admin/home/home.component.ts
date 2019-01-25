@@ -10,6 +10,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    (<HTMLElement>document.querySelector('.mat-tab-labels')).style.justifyContent = 'center';
   }
 
 }

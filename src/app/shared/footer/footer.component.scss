@@ -1,0 +1,11 @@
+@import '../../../styles/transition';
+
+.content {
+  background-color: #424242;
+  padding: 10px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 500px) {
+  .content { text-align: center; }
+}

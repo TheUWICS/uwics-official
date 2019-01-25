@@ -10,7 +10,7 @@ interface HeaderText {
   templateUrl: './page-header.component.html',
   styleUrls: ['./page-header.component.scss']
 })
-export class PageHeaderComponent implements OnInit, AfterViewInit{
+export class PageHeaderComponent implements OnInit, AfterViewInit {
   @Input() img_link: string;
   @Input() text: HeaderText;
   constructor() { }
@@ -19,8 +19,13 @@ export class PageHeaderComponent implements OnInit, AfterViewInit{
 
   ngAfterViewInit(): void {
     const elem = (<HTMLElement>document.querySelector('.welcome'));
-    elem.style.background = this.img_link;
-    elem.style.backgroundSize = 'cover';
+
+    if (this.img_link === undefined) {
+      elem.style.display = 'none';
+    } else {
+      elem.style.background = this.img_link;
+      elem.style.backgroundSize = 'cover';
+    }
   }
 
 }

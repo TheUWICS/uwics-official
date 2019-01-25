@@ -19,12 +19,13 @@ export class ProjectCardComponent implements OnInit {
 
   openDialog(): void {
     this.dialog.open(ProjectDialogComponent, {
-      width: '65vw',
       data: {
         project: this.project,
         admin: this.admin
       }
     });
+
+    if (window.innerWidth < 768) { (<HTMLElement>document.querySelector('.mat-dialog-container')).style.height = '75vh'; }
   }
 
 }

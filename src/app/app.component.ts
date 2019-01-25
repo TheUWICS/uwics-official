@@ -1,8 +1,6 @@
 import {MediaMatcher} from '@angular/cdk/layout';
 import {ChangeDetectorRef, Component, OnDestroy} from '@angular/core';
-import {MatDialog} from '@angular/material/dialog';
 import {fadeAnimation} from '../fade.animation';
-import {WebsiteInfoComponent} from './website-info/website-info.component';
 import {AuthService} from './services/auth.service';
 
 /** @title Responsive sidenav */
@@ -18,7 +16,7 @@ export class AppComponent implements OnDestroy {
   private _mobileQueryListener: () => void;
   isLoggedIn: boolean;
 
-  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher, public dialog: MatDialog, public auth: AuthService) {
+  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher, public auth: AuthService) {
     this.mobileQuery = media.matchMedia('(max-width: 768px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
@@ -42,10 +40,6 @@ export class AppComponent implements OnDestroy {
     }
 
     this.dark = !this.dark;
-  }
-
-  openDialog(): void {
-    this.dialog.open(WebsiteInfoComponent);
   }
 
   public getRouterOutletState(outlet) {

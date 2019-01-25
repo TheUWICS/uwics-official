@@ -7,7 +7,6 @@ import {ServiceWorkerModule, SwUpdate} from '@angular/service-worker';
 
 import { AppComponent } from './app.component';
 
-import {MatMenuModule} from '@angular/material/menu';
 import {MatRippleModule} from '@angular/material/core';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatSnackBar, MatSnackBarModule} from '@angular/material/snack-bar';
@@ -30,7 +29,6 @@ import {MatButtonModule} from '@angular/material/button';
     MatSidenavModule,
     MatListModule,
     MatButtonModule,
-    MatMenuModule,
     MatRippleModule,
     MatSnackBarModule,
     AppRoutingModule,

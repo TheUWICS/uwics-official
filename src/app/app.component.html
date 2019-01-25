@@ -18,20 +18,11 @@
       <button mat-flat-button color="primary" routerLink= "/public/execs" (click) = "snav.close()" >Executives</button>
       <button mat-flat-button color="primary" routerLink= "/public/events" (click) = "snav.close()" >Events</button>
       <button mat-flat-button color="primary" routerLink= "/public/projects" (click) = "snav.close()">Projects</button>
-      <button mat-flat-button color="primary" *ngIf = "isLoggedIn" (click) = "snav.close()">Log out</button>
+      <button mat-flat-button color="primary" routerLink= "/public/about" (click) = "snav.close()">About</button>
+
     </div>
 
-    <span mat-ripple class = "fake-icon" [matMenuTriggerFor]="menu" (click) = "snav.close()">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M0 0h24v24H0z" fill="none"></path>
-        <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-      </svg>
-    </span>
-
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item (click) = "toggle()">Toggle Theme</button>
-      <button mat-menu-item routerLink= "/public/about">About Us</button>
-    </mat-menu>
+    <button mat-flat-button color="primary" (click) = "toggle()">Toggle Theme</button>
 
   </mat-toolbar>
 
@@ -45,6 +36,7 @@
         <a mat-list-item routerLink= "/public/execs" >Executives</a>
         <a mat-list-item routerLink= "/public/events" >Meetings and Events</a>
         <a mat-list-item routerLink= "/public/projects" >Projects</a>
+        <a mat-list-item routerLink= "/public/about" >About</a>
         <a mat-list-item routerLink= "/admin" >Admin Portal</a>
         <mat-divider></mat-divider>
       </mat-nav-list>

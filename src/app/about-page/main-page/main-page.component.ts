@@ -11,10 +11,12 @@ import {WebsiteInfoComponent} from '../website-info/website-info.component';
 export class MainPageComponent implements OnInit {
   link = 'url(\'../../assets/images/header.png\') center top no-repeat';
   header_text: HeaderText;
-  placeholder = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore\n' +
-    '      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n' +
-    '      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n' +
-    '      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
+  placeholder = 'The University of the West Indies Computing Society (UWICS) was established in 1996. The purpose of this society is to ' +
+    'forge a plan that focuses on computing and information technology in everyday life. UWICS comprises of individuals who are ' +
+    'enthusiastic about the applications of technology whether it is learning about the world of programming, gaining a better ' +
+    'understanding of how augmented reality works, exploring the graphical world involved in creating logos or being educated about the ' +
+    'various jobs that are elaborated. We aim to foster an environment that is educational, entertaining and inspiring so that members ' +
+    'are encouraged to discover and develop their knowledge in computing and information technology.';
 
   all_content = [{
     title: 'Lorem Ipsum',

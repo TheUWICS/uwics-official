@@ -15,41 +15,13 @@ $dark-theme:   mat-dark-theme($dark-primary, $dark-accent);
   color: white !important;
 }
 
-.uwics-dark a {
-  color: white;
-}
+.uwics-dark a { color: white; }
+.uwics-dark svg { fill: white; }
 
-.uwics-light snack-bar-container, .uwics-light .mat-simple-snackbar-action {
-  background: #00BCD4 !important;
-  color: white !important;
-}
+::-webkit-scrollbar { width: 0; }
 
-.uwics-light a {
-  color: black;
-}
+.mat-card-actions { margin-bottom: 0 !important; }
 
-.uwics-light app-footer .content {
-  background-color: #00BCD4;
-}
-
-svg { fill: white; }
-
-::-webkit-scrollbar {
-  width: 0;
-}
-
-.mat-card-actions {
-  margin-bottom: 0 !important;
-}
-
-strong {
-  font-weight: 500;
-}
-
-app-project-review .mat-expansion-panel-body {
-  padding: 0;
-}
-
-button, svg {
-  transition: all 0.3s ease;
-}
+strong { font-weight: 500; }
+app-project-review .mat-expansion-panel-body { padding: 0; }
+button, svg { transition: all 0.3s ease; }

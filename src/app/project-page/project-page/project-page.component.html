@@ -1,14 +1,7 @@
-<div class="header">
-  <h2>Members' Projects</h2>
-  <p>
-    The Computing Society is filled with talented members eager to embark on their journey into the world of coding and
-    software development. Below are some of the projects that they have done, either when they were learning something
-    new or building a project of their own.
-  </p>
-</div>
+<app-page-header [text]="header_text"></app-page-header>
 
 <mat-divider></mat-divider>
 
-<div class="approved">
+<div style = "text-align: center;">
     <app-project-card *ngFor = "let projects of approved" [project]=projects [admin]="false"></app-project-card>
 </div>

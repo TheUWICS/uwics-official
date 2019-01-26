@@ -1,3 +1,5 @@
+@import '../../../styles/transition';
+
 .welcome {
   position: relative;
   height: 200px;
@@ -15,7 +17,7 @@
   margin: 0 auto;
 }
 
-h1 { margin-top: 0; }
+h1 { margin: 0 10px 10px 10px; }
 
 @media screen and (min-width: 768px) {
   .welcome { height: 450px; }

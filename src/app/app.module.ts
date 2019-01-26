@@ -1,7 +1,7 @@
-import { BrowserModule } from '@angular/platform-browser';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { AppRoutingModule } from './app-routing.module';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { environment } from '../environments/environment';
 import {ServiceWorkerModule, SwUpdate} from '@angular/service-worker';
 
@@ -11,12 +11,9 @@ import {MatRippleModule} from '@angular/material/core';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatSnackBar, MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatToolbarModule} from '@angular/material/toolbar';
-
 import {MatListModule} from '@angular/material/list';
 import {MatButtonModule} from '@angular/material/button';
 
-// TODO Lazy Load the Admin module only after user has been authenticated
-// TODO Lazy Load firebase code (auth and firestore in admin module and firestore on public page module)
 
 @NgModule({
   declarations: [

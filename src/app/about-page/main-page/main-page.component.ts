@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {HeaderText} from '../../../model';
-import {MatDialog} from '@angular/material/dialog';
-import {WebsiteInfoComponent} from '../website-info/website-info.component';
 
 @Component({
   selector: 'app-main-page',
@@ -31,7 +29,7 @@ export class MainPageComponent implements OnInit {
       text: this.placeholder
     },
   ];
-  constructor(public dialog: MatDialog) {
+  constructor() {
     this.header_text = {
       heading: 'About us',
       p_text: this.placeholder
@@ -39,12 +37,6 @@ export class MainPageComponent implements OnInit {
   }
 
   ngOnInit() {
-  }
-
-  openDialog() {
-    this.dialog.open(WebsiteInfoComponent, {
-      width: '65vw'
-    });
   }
 
 }

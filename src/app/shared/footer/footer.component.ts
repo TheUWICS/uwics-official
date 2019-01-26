@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {environment} from '../../../environments/environment';
 
 @Component({
   selector: 'app-footer',
@@ -8,13 +7,11 @@ import {environment} from '../../../environments/environment';
 })
 export class FooterComponent implements OnInit {
 
-  version_num: string;
+  // TODO - Get names of people who takes photos
 
   constructor() { }
 
   ngOnInit() {
-    this.version_num = environment.version_num;
-
   }
 
 }

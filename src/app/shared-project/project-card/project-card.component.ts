@@ -10,6 +10,9 @@ import {ProjectDialogComponent} from '../project-dialog/project-dialog.component
 })
 export class ProjectCardComponent implements OnInit {
 
+  // TODO - Re-style Project cards to make it more appealing
+  // TODO - Think of additional information to put on a project card
+
   @Input() project: ProjectInfo;
   @Input() admin: boolean;
   constructor(public dialog: MatDialog) { }

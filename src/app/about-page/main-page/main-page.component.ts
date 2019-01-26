@@ -7,7 +7,10 @@ import {HeaderText} from '../../../model';
   styleUrls: ['./main-page.component.scss']
 })
 export class MainPageComponent implements OnInit {
-  link = 'url(\'../../assets/images/header.png\') center top no-repeat';
+
+  // TODO Get pictures for 3 rows of information
+  // TODO Fill in 3 rows with information
+
   header_text: HeaderText;
   placeholder = 'The University of the West Indies Computing Society (UWICS) was established in 1996. The purpose of this society is to ' +
     'forge a plan that focuses on computing and information technology in everyday life. UWICS comprises of individuals who are ' +

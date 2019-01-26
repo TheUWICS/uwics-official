@@ -7,6 +7,12 @@ import {HeaderText} from '../../../model';
   styleUrls: ['./exec-page.component.scss']
 })
 export class ExecPageComponent implements OnInit {
+
+  // TODO - Add short description about executives at the top of the page
+  // TODO - Request images from exec members to fill into the page
+  // TODO - Request short description of self from all exec members
+  // TODO - Request links to Github, personal websites, etc from members
+
   link = 'url(\'../../assets/images/execs.jpeg\') center top no-repeat';
   header_text: HeaderText;
 

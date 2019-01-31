@@ -16,3 +16,20 @@
 .grid-container {
   display: inline-grid;
 }
+
+.morals {
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+.mat-expansion-panel p{
+  width: 75%;
+  margin: 10px auto;
+}
+
+@media screen and (min-width: 768px) {
+  .mat-expansion-panel {
+    width: 80vw;
+    margin: 0 auto;
+  }
+}

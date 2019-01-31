@@ -1,0 +1,18 @@
+<mat-card class = "exec-info">
+  <p style = "margin-bottom: 0;" class = "mat-headline">{{cardinfo.title}}</p>
+  <div>
+    <img [src]="cardinfo.img_link">
+  </div>
+
+  <p style = "margin-top: 10px;">
+    {{cardinfo.desc}}
+  </p>
+
+  <button mat-raised-button color="primary" [routerLink]="cardinfo.router_link">
+    View more
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+    </svg>
+  </button>
+</mat-card>

@@ -9,7 +9,6 @@ import {MatInputModule} from '@angular/material/input';
 import {MatTabsModule} from '@angular/material/tabs';
 import {AuthGuard} from '../services/auth.guard';
 import {AuthService} from '../services/auth.service';
-import {MatCardModule} from '@angular/material/card';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatListModule} from '@angular/material/list';
 import {SharedModule} from '../shared/shared.module';
@@ -33,7 +32,6 @@ import {DataService} from '../services/data.service';
     CommonModule,
     SharedProjectModule,
     MatButtonModule,
-    MatCardModule,
     MatExpansionModule,
     MatListModule,
     MatInputModule,

@@ -19,9 +19,8 @@ export class ExecPageComponent implements OnInit {
   constructor() {
     this.header_text = {
       heading: 'Meet the Executives!',
-      p_text: `Lorem ipsum dolor sit amet, tempor expetendis eum no, vim te errem graecis probatus. Ut duo audire adipiscing
-      vituperatoribus. Mea at eius postea fabellas, ei prompta mandamus quo. Ad cum quem tollit, justo oblique cum no.
-      Ex nam convenire constituam, fuisset phaedrum ei sed.`
+      p_text: 'It takes a lot of drive, energy, passion and commitment to keep the Computing Society interactive and meaningful. Meet ' +
+        'some of the people who make it possible.'
     };
   }
 

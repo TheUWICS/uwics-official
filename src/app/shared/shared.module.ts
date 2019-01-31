@@ -3,19 +3,23 @@ import { CommonModule } from '@angular/common';
 import {PageHeaderComponent} from './page-header/page-header.component';
 import {MatCardModule} from '@angular/material/card';
 import {FooterComponent} from './footer/footer.component';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   imports: [
     CommonModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
   declarations: [
     PageHeaderComponent,
-    FooterComponent
+    FooterComponent,
   ],
   exports: [
     PageHeaderComponent,
-    FooterComponent
+    FooterComponent,
+    MatCardModule,
+    MatButtonModule
   ]
 })
 export class SharedModule { }

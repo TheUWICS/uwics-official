@@ -1,5 +1,12 @@
+<ng-template #big_screen>
+
+  <mat-card class = "exec-info">
+    <div *ngIf = "false; else cardinfo"></div>
+  </mat-card>
+</ng-template>
+
 <div (window:resize)="onResize($event)" style = "display: inline-block;" id = "wrapper" >
-  <mat-expansion-panel *ngIf = "small_screen; else cardinfo">
+  <mat-expansion-panel *ngIf = "small_screen; else big_screen">
     <mat-expansion-panel-header>
       <mat-panel-title>
         Exec name
@@ -14,8 +21,9 @@
   </mat-expansion-panel>
 
   <ng-template #cardinfo>
-    <div class="exec-info mat-typography">
-      <p *ngIf = "!small_screen" class = "mat-headline">Exec name</p>
+
+    <div id = "dynamic" class="exec-info mat-typography">
+      <p style = "margin-bottom: 0;" *ngIf = "!small_screen" class = "mat-headline">Exec name</p>
       <p *ngIf = "!small_screen">Exec position</p>
       <div>
         <img src="../../../assets/images/placeholder.jpg" alt="Photo of a Shiba Inu">
@@ -27,7 +35,7 @@
         bred for hunting.
       </p>
 
-      <button color = "primary" mat-flat-button>More Info</button>
+      <button style = "margin-bottom: 15px;" color = "primary" mat-flat-button>More Info</button>
 
     </div>
   </ng-template>

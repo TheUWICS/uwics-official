@@ -8,6 +8,7 @@ import {DataService} from '../../services/data.service';
   styleUrls: ['./project-page.component.scss']
 })
 export class ProjectPageComponent implements OnInit {
+  link = 'url(\'../../assets/images/project_header.jpg\') center no-repeat';
   header_text: HeaderText;
   approved: ProjectInfo[] = [];
 

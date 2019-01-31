@@ -1,0 +1,18 @@
+mat-expansion-panel { width: 80vw; }
+
+img {
+  width: 75%;
+}
+
+.exec-info {
+  display: inline-block;
+  width: 40vw;
+  text-align: center;
+  margin: 15px;
+}
+
+
+@media screen and (max-width: 768px) {
+  img { width: 100%; }
+  .exec-info { width: 80%; }
+}

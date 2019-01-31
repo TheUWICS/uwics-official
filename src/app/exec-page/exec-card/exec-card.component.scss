@@ -1,13 +1,4 @@
-mat-expansion-panel {
-  width: 80vw;
-}
-
-.exec-info {
-  max-width: 20vw;
-  text-align: center;
-  padding: 15px 20px 0 20px;
-  margin-bottom: 15px;
-}
+mat-expansion-panel { width: 80vw; }
 
 img {
   width: 15vw;
@@ -15,14 +6,18 @@ img {
   border-radius: 50%;
 }
 
+.exec-info {
+  max-width: 25vw;
+  text-align: center;
+  margin: 15px;
+}
+
+
 @media screen and (max-width: 768px) {
   img {
-    margin: 0 auto;
     width: 45vw;
     height: 45vw;
   }
 
-  .exec-info {
-    max-width: 100%;
-  }
+  .exec-info { max-width: 100%; }
 }

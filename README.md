@@ -122,7 +122,7 @@ DO NOT MERGE BRANCHES WHEN FINISHED. Merges will be done by the webmaster.
 If you need to perform any bug fixes, then follow the steps below:
 
 * Pull from master to gain any new changes to the project
-* Create a new branch prefixed with your initials, `-bug-fix-`followed by a number
+* Create a branch named in the following format: `initials`-`bug-fix`-`number`
 (eg. QQB-bug-fix-1, QQB-bug-fix-2, etc.)
 * Edit the code in your IDE
 * Before pushing your changes, make sure to pull from the repo again.
@@ -130,6 +130,7 @@ If you need to perform any bug fixes, then follow the steps below:
 ## Adding a Page
 When adding a page, the following has to be done:
 
+* Create a branch named in the following format: `initials`-`add-page-name`-`number`
 * Run the command to generate a new module `ng generate module page-name --routing`
  or `ng g m page-name --routing`
 * Add the newly created module to the list of routes in the `app-routing.module.ts` file

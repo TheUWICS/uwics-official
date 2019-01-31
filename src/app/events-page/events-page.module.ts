@@ -4,13 +4,16 @@ import { CommonModule } from '@angular/common';
 import { EventsPageRoutingModule } from './events-page-routing.module';
 import {EventsPageComponent} from './events-page/events-page.component';
 import {MatDividerModule} from '@angular/material/divider';
+import { SharedModule } from "../shared/shared.module";
+import { EventsInfoComponent } from './events-info/events-info.component';
 
 @NgModule({
-  declarations: [EventsPageComponent],
+  declarations: [EventsPageComponent, EventsInfoComponent],
   imports: [
     CommonModule,
     MatDividerModule,
-    EventsPageRoutingModule
+    EventsPageRoutingModule,
+    SharedModule
   ]
 })
 export class EventsPageModule { }

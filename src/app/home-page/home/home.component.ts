@@ -7,12 +7,6 @@ import {AbstractCardInfo, HeaderText} from '../../../model';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  // TODO - Add short, captivating text at the start of the home page about UWICS
-  // TODO - Add short text about members' projects before using the project link button
-  // TODO - Experiment with design -> try 4 different section cards on the home page, one linking to each page on the website
-  // TODO - Fill in text for the "What we stand for" section
-  // TODO - Either keep "What we stand for" section on the home page, or move to About Page (and remove the "More about us" button)
-
   link = 'url(\'../../assets/images/header.png\') center top no-repeat';
   exec_text: AbstractCardInfo;
   project_text: AbstractCardInfo;
@@ -46,14 +40,14 @@ export class HomeComponent implements OnInit {
     this.events_text = {
       title: 'Events and Meetings',
       img_link: '../../assets/images/project_header.jpg',
-      desc: 'In addition to keeping track of what we do every week, members are invited to take part in some of our major activities ' +
+      desc: 'In addition to keeping track of every week, members are invited to take part in some of our major activities ' +
         'such as Project Month and the DCIT Runtime Competition',
       router_link: '/public/events'
     };
     this.about_text = {
       title: 'More About Us',
       img_link: '../../assets/images/project_header.jpg',
-      desc: 'The UWI Computing Society has been around for years with many talented people passing through, and even some current ' +
+      desc: 'UWICS has been around for years with many talented people passing through, and even some current ' +
         'lecturers. Take a look at what we\'re about and how you can join.',
       router_link: '/public/about'
     };

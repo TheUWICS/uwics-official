@@ -3,8 +3,16 @@
   text-align: center;
   margin: 0 auto;
 }
-
 #stepper {
   width: 80%;
   margin: 0 auto;
+}
+.mat-card-image{
+  width: 300px;
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+}
+.mat-list-item{
+  cursor: pointer;
 }

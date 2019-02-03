@@ -1,2 +1,23 @@
 <app-page-header [text]="header_text"> </app-page-header>
-<app-events-info></app-events-info>
+
+<mat-divider></mat-divider>
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{selectedEvent.title}}</mat-card-title>
+    <mat-card-subtitle>Host(s):{{selectedEvent.hosts}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image [src]="selectedEvent.image">
+  <mat-card-content>
+    <p>
+      {{selectedEvent.description}}
+    </p>
+  </mat-card-content>
+</mat-card>
+<mat-list>
+  <mat-list-item *ngFor="let event of events" 
+    [class.selected] ="event===selectedEvent"
+    (click)="onSelected(event)">
+    {{event.title}}
+  </mat-list-item>
+</mat-list>

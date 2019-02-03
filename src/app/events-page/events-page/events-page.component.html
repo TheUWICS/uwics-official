@@ -1,2 +1,5 @@
 <app-page-header [text]="header_text"> </app-page-header>
 <app-events-info></app-events-info>
+    <mat-card *ngFor="let event of events">
+            <img mat-card-image [src]="event.image" alt="Photo of a Shiba Inu">
+    </mat-card>

@@ -26,9 +26,9 @@ export class EventsPageComponent implements OnInit {
     //   secondCtrl: ['', Validators.required]
     // });
     this.events=[
-      {title:"Resume Critique and Interview Session", hosts:"Randell Persad", image:"../../../assests/events/Resume Session.jpg",description:"TBA"},
-      {title:"Android Session", hosts:"Justin Ramjattan and Qarun Bissoondial", image:"../../../assests/events/Android Session.png",description:"TBA"},
-      {title:"LAN PARTY", hosts:"", image:"../../../assests/events/LAN PARTY.png",description:"TBA"},
+      {title:"Resume Critique and Interview Session", hosts:"Randell Persad and Rachel Peters", image:"../../../assets/events/Resume Session.jpg",description:"TBA"},
+      {title:"Android Session", hosts:"Justin Ramjattan and Qarun Bissoondial", image:"../../../assets/events/Android Session.png",description:"TBA"},
+      {title:"LAN PARTY", hosts:"", image:"../../../assets/events/LAN PARTY.jpg",description:"TBA"},
 
     ]
   }

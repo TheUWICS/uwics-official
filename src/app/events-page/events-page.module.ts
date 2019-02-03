@@ -8,10 +8,9 @@ import {MatCardModule} from '@angular/material/card'
 import {MatListModule} from '@angular/material/list'
 import {MatGridListModule} from '@angular/material/grid-list'
 import { SharedModule } from "../shared/shared.module";
-import { EventsInfoComponent } from './events-info/events-info.component';
 
 @NgModule({
-  declarations: [EventsPageComponent, EventsInfoComponent],
+  declarations: [EventsPageComponent],
   imports: [
     CommonModule,
     MatDividerModule,

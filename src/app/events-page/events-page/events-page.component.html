@@ -2,11 +2,11 @@
 
 <mat-divider></mat-divider>
 
-<mat-tab-group [selectedIndex]="1" class ="align_center">
-  <mat-tab label="Previous Events">
+<mat-tab-group mat-align-tabs="center" [selectedIndex]="1">
+  <mat-tab label="Previous">
     <app-previous-events></app-previous-events>
   </mat-tab>
-  <mat-tab label="Upcoming Event">
+  <mat-tab label="Upcoming">
     <app-upcoming-event></app-upcoming-event>
   </mat-tab>
   <mat-tab label="Calender">

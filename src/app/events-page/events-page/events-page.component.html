@@ -2,22 +2,14 @@
 
 <mat-divider></mat-divider>
 
-<mat-card>
-  <mat-card-header>
-    <mat-card-title>{{selectedEvent.title}}</mat-card-title>
-    <mat-card-subtitle>Host(s):{{selectedEvent.hosts}}</mat-card-subtitle>
-  </mat-card-header>
-  <img mat-card-image [src]="selectedEvent.image">
-  <mat-card-content>
-    <p>
-      {{selectedEvent.description}}
-    </p>
-  </mat-card-content>
-</mat-card>
-<mat-list>
-  <mat-list-item *ngFor="let event of events" 
-    [class.selected] ="event===selectedEvent"
-    (click)="onSelected(event)">
-    {{event.title}}
-  </mat-list-item>
-</mat-list>
+<mat-tab-group [selectedIndex]="1" class ="align_center">
+  <mat-tab label="Previous Events">
+    <app-previous-events></app-previous-events>
+  </mat-tab>
+  <mat-tab label="Upcoming Event">
+    <app-upcoming-event></app-upcoming-event>
+  </mat-tab>
+  <mat-tab label="Calender">
+    <app-calender-event></app-calender-event>
+  </mat-tab>
+</mat-tab-group>

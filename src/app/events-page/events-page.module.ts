@@ -7,16 +7,21 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatCardModule} from '@angular/material/card'
 import {MatListModule} from '@angular/material/list'
 import {MatGridListModule} from '@angular/material/grid-list'
+import {MatTabsModule} from '@angular/material/tabs'
 import { SharedModule } from "../shared/shared.module";
+import { PreviousEventsComponent } from './previous-events/previous-events.component';
+import { UpcomingEventComponent } from './upcoming-event/upcoming-event.component';
+import { CalenderEventComponent } from './calender-event/calender-event.component';
 
 @NgModule({
-  declarations: [EventsPageComponent],
+  declarations: [EventsPageComponent, PreviousEventsComponent, UpcomingEventComponent, CalenderEventComponent],
   imports: [
     CommonModule,
     MatDividerModule,
     MatCardModule,
     MatListModule,
     MatGridListModule,
+    MatTabsModule,
     EventsPageRoutingModule,
     SharedModule
   ]

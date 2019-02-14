@@ -5,15 +5,33 @@ mat-card {
   margin: 15px;
   display: inline-block;
 }
+mat-card-subtitle {
+  margin-top: 5px !important;
+  //text-align: left;
+  display: flex;
+  justify-content: center;
+}
+p {text-align: justify;}
 
-mat-card-content p { overflow-y: auto; }
-mat-expansion-panel { margin: 10px; }
-mat-card-actions { text-align: center; }
-mat-card h3 { text-align: center; }
-button { margin: 10px;}
+
 
 @media screen and (max-width: 768px) {
-  mat-card {
-    width: 80vw;
+  mat-card-title {text-align: center !important;}
+  mat-card {width: 80vw;}
+  mat-card-actions {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-content {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-content > p {
+    text-align: left;
+    width: 60%;
   }
 }

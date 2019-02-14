@@ -7,7 +7,7 @@ import '@firebase/auth';
 export class AuthService {
 
   isLoggedIn: boolean;
-  auth;
+  auth
 
   constructor(private router: Router) {
     this.auth = firebase.apps.length === 0
@@ -18,7 +18,7 @@ export class AuthService {
         projectId: 'uwics-official',
         storageBucket: 'uwics-official.appspot.com',
         messagingSenderId: '714702661898'
-      }).firestore()
+      }).auth()
       : firebase.apps[0].auth();
   }
 

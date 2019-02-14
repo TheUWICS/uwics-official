@@ -1,28 +1,17 @@
 @import '../../../styles/transition';
 
-.header {
-  margin: 20px;
-}
+.header {margin: 20px;}
 
 .mat-expansion-panel {
   margin: 0 auto;
   width: 60vw;
 }
 
-.mat-expansion-panel-body {
-  padding: 0;
-}
+.mat-expansion-panel-body {padding: 0;}
 
-button {
-  margin: 10px;
-}
-
-svg {
-  margin-right: 10px;
-}
+button {margin: 10px;}
+svg {margin-right: 10px;}
 
 @media screen and (max-width: 768px) {
-  .mat-expansion-panel {
-    width: 90vw;
-  }
+  .mat-expansion-panel {width: 90vw;}
 }

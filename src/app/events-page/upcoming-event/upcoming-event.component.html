@@ -1,3 +1,13 @@
-<p>
-  upcoming-event works!
-</p>
+<div class="adjust">
+  <img [src]="currentEvent.image" alt="">
+  <div class="details">
+    <h1 class="mat-h1">Description:</h1>
+    <p>
+      {{currentEvent.description}}
+      </p>
+      <h2>Presenters</h2>
+      <p>
+        {{currentEvent.hosts}}
+      </p>
+  </div>
+</div>

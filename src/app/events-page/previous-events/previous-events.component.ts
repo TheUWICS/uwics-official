@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import {EventsInfo} from '../../../model'
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
+
 @Component({
   selector: 'app-previous-events',
   templateUrl: './previous-events.component.html',
@@ -8,7 +10,7 @@ import {EventsInfo} from '../../../model'
 export class PreviousEventsComponent implements OnInit {
   events:EventsInfo[]=[];
   selectedEvent:EventsInfo;
-  constructor() {
+  constructor(public dialog: MatDialog) {
   }
 
   ngOnInit() {
@@ -21,11 +23,28 @@ export class PreviousEventsComponent implements OnInit {
       {title:"Git Session", hosts:"Akil Hosang", image:"../../../assets/events/Git Session.png",description:"TBA"},
       {title:"First Session 2018", hosts:"None", image:"../../../assets/events/First Session 2018.png",description:"TBA"},
       {title:"LAN Party(April 2018)", hosts:"", image:"../../../assets/events/LAN PARTY.jpg",description:"TBA"},
-
     ];
-    this.selectedEvent=this.events[0];
   }
-  onSelected(event:EventsInfo):void{
-    this.selectedEvent=event;
+  openDialog(event:EventsInfo):void{
+    const dialogRef =  this.dialog.open(Dialog, {
+      width:'500px',
+      data:{title:event.title, hosts:event.hosts, image:event.image,description:event.description}
+    });
+    dialogRef.afterClosed().subscribe(() => {
+   });
+  }
+}
+@Component({
+  selector:'app-event-dialog',
+  templateUrl:'dialog.component.html',
+  styleUrls: ['./previous-events.component.scss']
+})
+export class Dialog{
+  constructor(
+    public dialogRef: MatDialogRef<Dialog>,
+    @Inject(MAT_DIALOG_DATA) public data: EventsInfo){}
+
+  onNoClick():void{
+    this.dialogRef.close()
   }
 }

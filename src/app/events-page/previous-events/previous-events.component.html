@@ -1,3 +1,8 @@
-<p>
-  previous-events works!
-</p>
+<div class="adjust">
+    <mat-card  class="card-scroll" *ngFor = "let event of events">
+      <img mart-card-image [src]= event.image>
+      <mat-card-actions>
+        <button  mat-raised-button color="primary" (click)="openDialog(event)"> More Info</button>
+      </mat-card-actions>
+    </mat-card>
+</div>

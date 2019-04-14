@@ -10,6 +10,7 @@ import {MatDialogModule} from '@angular/material/dialog'
 import {MatButtonModule} from '@angular/material/button';
 import {MatGridListModule} from '@angular/material/grid-list'
 import {MatTabsModule} from '@angular/material/tabs'
+import {MatExpansionModule} from '@angular/material/expansion'
 import { SharedModule } from "../shared/shared.module";
 import { PreviousEventsComponent, Dialog } from './previous-events/previous-events.component';
 import { UpcomingEventComponent } from './upcoming-event/upcoming-event.component';
@@ -26,6 +27,7 @@ import { CalenderEventComponent } from './calender-event/calender-event.componen
     MatListModule,
     MatGridListModule,
     MatTabsModule,
+    MatExpansionModule,
     MatDialogModule,
     MatButtonModule,
     EventsPageRoutingModule,

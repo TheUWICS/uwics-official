@@ -1,19 +1,16 @@
 .adjust{
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  .card-scroll{
-    display: inline-block;
-  }
+  text-align: center;
 }
 img{
   width: 400px;
-  height: auto;
+  height: 550px;
 }
 @media screen and (max-width: 768px) {
   img {
-    display: block;
-    width: 70vw;
-    height: 90vw;
+    width: 60vw;
+    height: 75vw;
+  }
+  .details{
+    font-size: 16px;
   }
 }

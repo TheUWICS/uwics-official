@@ -12,7 +12,7 @@
 }
 img{
   width: 400px;
-  height: auto;
+  height: 550px;
 }
 @media screen and (max-width: 768px) {
   img {
@@ -27,7 +27,9 @@ img{
     flex-direction: column;
   }
   .details{
-    padding-top: 20px;
     padding-left: 0px;
+  }
+  p{
+    font-size: 16px;
   }
 }

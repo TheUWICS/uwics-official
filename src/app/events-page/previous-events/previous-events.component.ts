@@ -10,6 +10,7 @@ import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
 export class PreviousEventsComponent implements OnInit {
   events:EventsInfo[]=[];
   selectedEvent:EventsInfo;
+  small_screen=false;
   constructor(public dialog: MatDialog) {
   }
 
@@ -24,6 +25,10 @@ export class PreviousEventsComponent implements OnInit {
       {title:"First Session 2018", hosts:"None", image:"../../../assets/events/First Session 2018.png",description:"TBA"},
       {title:"LAN Party(April 2018)", hosts:"", image:"../../../assets/events/LAN PARTY.jpg",description:"TBA"},
     ];
+    this.small_screen = window.innerWidth <= 768;
+  }
+  onResize(event) {
+    this.small_screen = event.target.innerWidth <= 768;
   }
   openDialog(event:EventsInfo):void{
     const dialogRef =  this.dialog.open(Dialog, {
